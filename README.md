@@ -1,14 +1,18 @@
+> **ATTENTION** This is an experimental test of the [{sandpaper}](https://carpentries.github.io/sandpaper-docs) lesson infrastructure
+> with automated conversion via [the lesson transition script](https://github.com/data-lessons/lesson-transition/).
+> 
+> If anything seems off, please contact Zhian Kamvar [zkamvar@carpentries.org](mailto:zkamvar@carpentries.org)
+
 [![Create a Slack Account with us](https://img.shields.io/badge/Create_Slack_Account-The_Carpentries-071159.svg)](https://swc-slack-invite.herokuapp.com/)
 ![Build and Deploy Website](https://github.com/swcarpentry/r-novice-gapminder/workflows/Build%20and%20Deploy%20Website/badge.svg)
- [![Slack Status](https://img.shields.io/badge/Slack_Channel-swc--r--gapminder-E01563.svg)](https://swcarpentry.slack.com/messages/C9Y0M3YKG)
+[![Slack Status](https://img.shields.io/badge/Slack_Channel-swc--r--gapminder-E01563.svg)](https://swcarpentry.slack.com/messages/C9Y0M3YKG)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/swcarpentry/r-novice-gapminder/binder?urlpath=rstudio)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3265164.svg)](https://doi.org/10.5281/zenodo.3265164)
 
-R for Reproducible Scientific Analysis
-======================================
+# R for Reproducible Scientific Analysis
 
 An introduction to R for non-programmers using the [Gapminder][gapminder] data.
-Please see <https://swcarpentry.github.io/r-novice-gapminder> for a rendered version of this material,
+Please see [https://swcarpentry.github.io/r-novice-gapminder](https://swcarpentry.github.io/r-novice-gapminder) for a rendered version of this material,
 [the lesson template documentation][lesson-example]
 for instructions on formatting, building, and submitting material,
 or run `make` in this directory for a list of helpful commands.
@@ -34,14 +38,16 @@ usability.
 
 Maintainers:
 
-* [David Mawdsley][mawdsley_david]
-* [Jeff Oliver][oliver_jeffrey]
-* Tom Wright
-* [Naupaka Zimmerman][zimmerman_naupaka]
+- [David Mawdsley][mawdsley_david]
+- [Jeff Oliver][oliver_jeffrey]
+- Tom Wright
+- [Naupaka Zimmerman][zimmerman_naupaka]
 
 [gapminder]: http://www.gapminder.org/
 [lesson-example]: https://carpentries.github.io/lesson-example
-[mawdsley_david]: https://carpentries.org/maintainers/#mawds
-[oliver_jeffrey]: https://carpentries.org/maintainers/#jcoliver
-[wright_tom]: https://software-carpentry.org/team/#wright_thomas
-[zimmerman_naupaka]: https://carpentries.org/maintainers/#naupaka
+[mawdsley\_david]: https://carpentries.org/maintainers/#mawds
+[oliver\_jeffrey]: https://carpentries.org/maintainers/#jcoliver
+[zimmerman\_naupaka]: https://carpentries.org/maintainers/#naupaka
+
+
+
