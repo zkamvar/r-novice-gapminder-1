@@ -58,10 +58,16 @@
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/about.html</loc>
   </url>
   <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/aio.html</loc>
+  </url>
+  <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/discuss.html</loc>
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/guide.html</loc>
+  </url>
+  <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/images.html</loc>
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/index.html</loc>
@@ -124,13 +130,25 @@
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/about.html</loc>
   </url>
   <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/discuss.html</loc>
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/guide.html</loc>
   </url>
   <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/profiles.html</loc>
@@ -140,6 +158,12 @@
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor/setup.html</loc>
+  </url>
+  <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://fishtree-attempt.github.io/r-novice-gapminder/key-points.html</loc>
   </url>
   <url>
     <loc>https://fishtree-attempt.github.io/r-novice-gapminder/profiles.html</loc>
