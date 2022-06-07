@@ -17,7 +17,8 @@
     <header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav software"><a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
-      <div class="large-logo"><img alt="Software Carpentry" src="../assets/images/software-logo.svg"></div>
+      <div class="large-logo">
+        <img alt="Software Carpentry" src="../assets/images/software-logo.svg"></div>
     </div>
     <div class="selector-container ">
       
@@ -421,7 +422,7 @@
   Solution to challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here is one possible solution:</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -454,7 +455,7 @@ Binned scatterplot of life expectancy versus year showing how life expectancy ha
   Solution to challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The solution presented below adds <code>color=continent</code> to the call of the <code>aes</code> function. The general trend seems to indicate an increased life expectancy over the years. On continents with stronger economies we find a longer life expectancy.</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -535,7 +536,7 @@ Binned scatterplot of life expectancy vs year with color-coded continents showin
   Solution to challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The lines now get drawn over the points!</p>
 <div class="codewrapper sourceCode" id="cb11">
@@ -626,7 +627,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 4a
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Here a possible solution: Notice that the <code>color</code> argument is supplied outside of the <code>aes()</code> function. This means that it applies to all data points on the graph and is not related to a specific variable.</p>
 <div class="codewrapper sourceCode" id="cb18">
@@ -664,7 +665,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 4b
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Here is a possible solution: Notice that supplying the <code>color</code> argument inside the <code>aes()</code> functions enables you to connect it to a certain variable. The <code>shape</code> argument, as you can see, modifies all data points the same way (it is outside the <code>aes()</code> call) while the <code>color</code> argument which is placed inside the <code>aes()</code> call modifies a point’s color based on its continent value.</p>
 <div class="codewrapper sourceCode" id="cb20">
@@ -766,7 +767,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to Challenge 5
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Here a possible solution: <code>xlab()</code> and <code>ylab()</code> set labels for the x and y axes, respectively The axis title, text and ticks are attributes of the theme and must be modified within a <code>theme()</code> call.</p>
 <div class="codewrapper sourceCode" id="cb25">
@@ -820,9 +821,9 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.7" class="external-link">sandpaper (0.5.7)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.8" class="external-link">sandpaper (0.5.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.1.13" class="external-link">varnish (0.1.13)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.1.14" class="external-link">varnish (0.1.14)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -844,7 +845,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/instructor/08-plot-ggplot2.html",
   "dateCreated": "2022-05-31",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-05-31"
+  "datePublished": "2022-06-07"
 }
 
   </script><script>

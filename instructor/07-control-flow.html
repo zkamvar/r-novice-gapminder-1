@@ -17,7 +17,8 @@
     <header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav software"><a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
-      <div class="large-logo"><img alt="Software Carpentry" src="../assets/images/software-logo.svg"></div>
+      <div class="large-logo">
+        <img alt="Software Carpentry" src="../assets/images/software-logo.svg"></div>
     </div>
     <div class="selector-container ">
       
@@ -480,7 +481,7 @@
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We will first see a solution to Challenge 1 which does not use the <code>any()</code> function. We first obtain a logical vector describing which element of <code>gapminder$year</code> is equal to <code>2002</code>:</p>
 <div class="codewrapper sourceCode" id="cb12">
@@ -755,7 +756,7 @@
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>We can check whether the two vectors are identical using the <code>all()</code> function:</p>
 <div class="codewrapper sourceCode" id="cb32">
@@ -856,7 +857,7 @@
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>````</p>
 <p><strong>Step 3</strong>: The exercise only wants the output printed if the average life expectancy is less than 50 or greater than 50. So we need to add an <code>if()</code> condition before printing, which evaluates whether the calculated average life expectancy is above or below a threshold, and prints an output conditional on the result. We need to amend (3) from above:</p>
@@ -900,7 +901,7 @@
   Solution to Challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>We modify our solution to Challenge 3 by now adding two thresholds, <code>lowerThreshold</code> and <code>upperThreshold</code> and extending our if-else statements:</p>
 <div class="codewrapper sourceCode" id="cb42">
@@ -945,7 +946,7 @@
   Solution for Challenge 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>We will use the <code>grep()</code> command that was introduced in the Unix Shell lesson to find countries that start with “B.” Lets understand how to do this first. Following from the Unix shell section we may be tempted to try the following</p>
 <div class="codewrapper sourceCode" id="cb43">
@@ -1027,9 +1028,9 @@
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.7" class="external-link">sandpaper (0.5.7)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.8" class="external-link">sandpaper (0.5.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.1.13" class="external-link">varnish (0.1.13)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.1.14" class="external-link">varnish (0.1.14)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1051,7 +1052,7 @@
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/instructor/07-control-flow.html",
   "dateCreated": "2022-05-31",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-05-31"
+  "datePublished": "2022-06-07"
 }
 
   </script><script>

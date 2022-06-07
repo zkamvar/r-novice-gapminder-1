@@ -32,7 +32,9 @@
     <header id="top" class="navbar navbar-expand-md navbar-light bg-white top-nav software"><a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
   <div class="container-fluid top-nav-container">
     <div class="col-md-6">
-      <div class="large-logo"><img alt="Software Carpentry" src="assets/images/software-logo.svg"></div>
+      <div class="large-logo">
+        <img alt="Software Carpentry" src="assets/images/software-logo.svg">
+</div>
     </div>
     <div class="selector-container ">
       
@@ -1431,7 +1433,7 @@ Managing your projects in a reproducible fashion doesn’t just make your scienc
   Solution to Challenge 4
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>By running these commands in the shell:</p>
 <div class="codewrapper sourceCode" id="cb1">
@@ -1729,7 +1731,7 @@ loaded via a namespace (and not attached):
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>The <code>c()</code> function creates a vector, in which all elements are the same type. In the first case, the elements are numeric, in the second, they are characters, and in the third they are characters: the numeric values are “coerced” to be characters.</p>
 </div>
@@ -1754,7 +1756,7 @@ loaded via a namespace (and not attached):
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>To look at the help for the <code>paste()</code> function, use:</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -1832,7 +1834,7 @@ loaded via a namespace (and not attached):
   Solution to Challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The standard R function for reading tab-delimited files with a period decimal separator is read.delim(). You can also do this with <code>read.table(file, sep="\t")</code> (the period is the <em>default</em> decimal separator for <code>read.table()</code>, although you may have to change the <code>comment.char</code> argument as well if your data file contains hash (#) characters</p>
 </div>
@@ -3491,7 +3493,7 @@ level, NA generated</code></pre>
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ol style="list-style-type: decimal">
 <li><code>human_age &lt;- cats$age * 7</code></li>
@@ -3679,7 +3681,7 @@ level, NA generated</code></pre>
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb41">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -3978,7 +3980,7 @@ Central African Republic                     Chad                    Chile
   Solution to Challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>To check the last few lines it’s relatively simple as R already has a function for this:</p>
 <div class="codewrapper sourceCode" id="cb69">
@@ -4024,7 +4026,7 @@ Central African Republic                     Chad                    Chile
   Solution to Challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>The <code>source</code> function can be used to use a script within a script. Assume you would like to load the same type of file over and over again and therefore you need to specify the arguments to fit the needs of your file. Instead of writing the necessary argument again and again you could just write it once and save it as a script. Then, you can use <code>source("Your_Script_containing_the_load_function")</code> in a new script to use the function of that script without writing everything again. Check out <code>?source</code> to find out more.</p>
 <div class="codewrapper sourceCode" id="cb71">
@@ -4063,7 +4065,7 @@ Central African Republic                     Chad                    Chile
   Solution to Challenge 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>The object <code>gapminder</code> is a data frame with columns</p>
 <ul>
@@ -5643,7 +5645,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>We will first see a solution to Challenge 1 which does not use the <code>any()</code> function. We first obtain a logical vector describing which element of <code>gapminder$year</code> is equal to <code>2002</code>:</p>
 <div class="codewrapper sourceCode" id="cb12">
@@ -5919,7 +5921,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>We can check whether the two vectors are identical using the <code>all()</code> function:</p>
 <div class="codewrapper sourceCode" id="cb32">
@@ -6022,7 +6024,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Show me the solution
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>````</p>
 <p><strong>Step 3</strong>: The exercise only wants the output printed if the average life expectancy is less than 50 or greater than 50. So we need to add an <code>if()</code> condition before printing, which evaluates whether the calculated average life expectancy is above or below a threshold, and prints an output conditional on the result. We need to amend (3) from above:</p>
@@ -6066,7 +6068,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Solution to Challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>We modify our solution to Challenge 3 by now adding two thresholds, <code>lowerThreshold</code> and <code>upperThreshold</code> and extending our if-else statements:</p>
 <div class="codewrapper sourceCode" id="cb42">
@@ -6111,7 +6113,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Solution for Challenge 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <p>We will use the <code>grep()</code> command that was introduced in the Unix Shell lesson to find countries that start with “B.” Lets understand how to do this first. Following from the Unix shell section we may be tempted to try the following</p>
 <div class="codewrapper sourceCode" id="cb43">
@@ -6262,7 +6264,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   Solution to challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Here is one possible solution:</p>
 <div class="codewrapper sourceCode" id="cb5">
@@ -6296,7 +6298,7 @@ Binned scatterplot of life expectancy versus year showing how life expectancy ha
   Solution to challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>The solution presented below adds <code>color=continent</code> to the call of the <code>aes</code> function. The general trend seems to indicate an increased life expectancy over the years. On continents with stronger economies we find a longer life expectancy.</p>
 <div class="codewrapper sourceCode" id="cb6">
@@ -6379,7 +6381,7 @@ Binned scatterplot of life expectancy vs year with color-coded continents showin
   Solution to challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>The lines now get drawn over the points!</p>
 <div class="codewrapper sourceCode" id="cb11">
@@ -6472,7 +6474,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 4a
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Here a possible solution: Notice that the <code>color</code> argument is supplied outside of the <code>aes()</code> function. This means that it applies to all data points on the graph and is not related to a specific variable.</p>
 <div class="codewrapper sourceCode" id="cb18">
@@ -6511,7 +6513,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 4b
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Here is a possible solution: Notice that supplying the <code>color</code> argument inside the <code>aes()</code> functions enables you to connect it to a certain variable. The <code>shape</code> argument, as you can see, modifies all data points the same way (it is outside the <code>aes()</code> call) while the <code>color</code> argument which is placed inside the <code>aes()</code> call modifies a point’s color based on its continent value.</p>
 <div class="codewrapper sourceCode" id="cb20">
@@ -6619,7 +6621,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to Challenge 5
   </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Here a possible solution: <code>xlab()</code> and <code>ylab()</code> set labels for the x and y axes, respectively The axis title, text and ticks are attributes of the theme and must be modified within a <code>theme()</code> call.</p>
 <div class="codewrapper sourceCode" id="cb25">
@@ -6768,7 +6770,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Let’s try this on the <code>pop</code> column of the <code>gapminder</code> dataset.</p>
 <p>Make a new column in the <code>gapminder</code> data frame that contains population in units of millions of people. Check the head or tail of the data frame to make sure it worked.</p>
@@ -6813,7 +6815,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Refresh your plotting skills by plotting population in millions against year.</p>
 <div class="codewrapper sourceCode" id="cb12">
@@ -6983,7 +6985,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Solution to challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Given the following matrix:</p>
 <div class="codewrapper sourceCode" id="cb28">
@@ -7064,7 +7066,7 @@ Scatterplot of GDP vs life expectancy showing logarithmic x-axis data spread
   Challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>We’re interested in looking at the sum of the following sequence of fractions:</p>
 <div class="codewrapper sourceCode" id="cb34">
@@ -7300,7 +7302,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Write a function called <code>kelvin_to_celsius</code> that takes a temperature in Kelvin and returns that temperature in Celsius</p>
 <div class="codewrapper sourceCode" id="cb7">
@@ -7352,7 +7354,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Define the function to convert directly from Fahrenheit to Celsius, by reusing these two functions above</p>
 <div class="codewrapper sourceCode" id="cb9">
@@ -7456,7 +7458,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Extend our previous definition of the function by adding in an explicit call to <code>stopifnot()</code>. Since <code>fahr_to_celsius()</code> is a composition of two other functions, checking inside here makes adding checks to the two component functions redundant.</p>
 <div class="codewrapper sourceCode" id="cb17">
@@ -7664,7 +7666,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb32">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -7716,7 +7718,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Write a function called <code>fence()</code> that takes two vectors as arguments, called <code>text</code> and <code>wrapper</code>, and prints out the text wrapped with the <code>wrapper</code>:</p>
 <div class="codewrapper sourceCode" id="cb36">
@@ -8179,7 +8181,7 @@ Australia,1992,17481977,Oceania,77.56,23424.76683</code></pre>
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -8402,7 +8404,7 @@ continent          2002         2007
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -8505,7 +8507,7 @@ continent          2002         2007
   Solution to Alternative Challenge
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Answer 3 will calculate the average life expectancy per continent.</p>
 </div>
@@ -8721,7 +8723,7 @@ continent          2002         2007
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -8825,7 +8827,7 @@ continent          2002         2007
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -9144,7 +9146,7 @@ continent          2002         2007
   Solution to Advanced Challenge
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -9279,7 +9281,7 @@ continent          2002         2007
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>The original gapminder data.frame is in an intermediate format. It is not purely long since it had multiple observation variables (<code>pop</code>,<code>lifeExp</code>,<code>gdpPercap</code>).</p>
 </div>
@@ -9416,7 +9418,7 @@ continent          2002         2007
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb12">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -9684,7 +9686,7 @@ continent          2002         2007
   Solution to Challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb37">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -9913,7 +9915,7 @@ summary(cars)
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>In RStudio, select File &gt; New file &gt; R Markdown…</p>
 <p>Delete the placeholder text and add the following:</p>
@@ -9976,7 +9978,7 @@ gapminder
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <pre>
 ```{r load-ggplot2}
@@ -10044,7 +10046,7 @@ knitr::opts_chunk$set(fig.path="Figs/", message=FALSE, warning=FALSE,
   Solution to Challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <pre>
 ```{r echo = FALSE, fig.width = 3}
@@ -10081,7 +10083,7 @@ plot(faithful)
   Solution to Challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Here’s some inline code to determine that 2 + 2 = <code>4</code>.</p>
 </div>
@@ -10261,9 +10263,9 @@ plot(faithful)
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.7" class="external-link">sandpaper (0.5.7)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.5.8" class="external-link">sandpaper (0.5.8)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.1.13" class="external-link">varnish (0.1.13)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.1.14" class="external-link">varnish (0.1.14)</a>.</p>
 			</div>
 		</footer>
 </div> <!-- / div.container -->
@@ -10285,8 +10287,8 @@ plot(faithful)
   "url": "https://fishtree-attempt.github.io/r-novice-gapminder/aio.html",
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/aio.html",
   "dateCreated": "2022-05-31",
-  "dateModified": "2022-05-31",
-  "datePublished": "2022-05-31"
+  "dateModified": "2022-06-07",
+  "datePublished": "2022-06-07"
 }
 
   </script><script>
