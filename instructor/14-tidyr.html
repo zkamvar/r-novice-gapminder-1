@@ -65,8 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li>
-          </ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -305,13 +304,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li>
+                    <ul><li>
+                        <a href="../instructor/key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/instructor-notes.html">Instructor Notes</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/images.html">Extract All Images</a>
+                      </li>
+                      
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -377,23 +384,23 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">#install.packages("tidyr")</span>
-<span class="co">#install.packages("dplyr")</span></code></pre>
+<code class="sourceCode R"><span><span class="co">#install.packages("tidyr")</span></span>
+<span><span class="co">#install.packages("dplyr")</span></span></code></pre>
 </div>
 <p>Load the packages</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">library</span><span class="op">(</span><span class="st">"tidyr"</span><span class="op">)</span>
-<span class="kw">library</span><span class="op">(</span><span class="st">"dplyr"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="st">"tidyr"</span><span class="op">)</span></span>
+<span><span class="kw">library</span><span class="op">(</span><span class="st">"dplyr"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>First, lets look at the structure of our original gapminder data frame:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -443,8 +450,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_wide</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"data/gapminder_wide.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_wide</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_wide</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"data/gapminder_wide.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_wide</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -494,12 +501,12 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_wide</span> <span class="op">%&gt;%</span>
-  <span class="fu">pivot_longer</span><span class="op">(</span>
-    cols <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fu">starts_with</span><span class="op">(</span><span class="st">'pop'</span><span class="op">)</span>, <span class="fu">starts_with</span><span class="op">(</span><span class="st">'lifeExp'</span><span class="op">)</span>, <span class="fu">starts_with</span><span class="op">(</span><span class="st">'gdpPercap'</span><span class="op">)</span><span class="op">)</span>,
-    names_to <span class="op">=</span> <span class="st">"obstype_year"</span>, values_to <span class="op">=</span> <span class="st">"obs_values"</span>
-  <span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_long</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_wide</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">pivot_longer</span><span class="op">(</span></span>
+<span>    cols <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fu">starts_with</span><span class="op">(</span><span class="st">'pop'</span><span class="op">)</span>, <span class="fu">starts_with</span><span class="op">(</span><span class="st">'lifeExp'</span><span class="op">)</span>, <span class="fu">starts_with</span><span class="op">(</span><span class="st">'gdpPercap'</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>    names_to <span class="op">=</span> <span class="st">"obstype_year"</span>, values_to <span class="op">=</span> <span class="st">"obs_values"</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_long</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -517,12 +524,12 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_wide</span> <span class="op">%&gt;%</span>
-  <span class="fu">pivot_longer</span><span class="op">(</span>
-    cols <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="op">-</span><span class="va">continent</span>, <span class="op">-</span><span class="va">country</span><span class="op">)</span>,
-    names_to <span class="op">=</span> <span class="st">"obstype_year"</span>, values_to <span class="op">=</span> <span class="st">"obs_values"</span>
-  <span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_long</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_wide</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">pivot_longer</span><span class="op">(</span></span>
+<span>    cols <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="op">-</span><span class="va">continent</span>, <span class="op">-</span><span class="va">country</span><span class="op">)</span>,</span>
+<span>    names_to <span class="op">=</span> <span class="st">"obstype_year"</span>, values_to <span class="op">=</span> <span class="st">"obs_values"</span></span>
+<span>  <span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_long</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -539,8 +546,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">separate</span><span class="op">(</span><span class="va">obstype_year</span>, into <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">'obs_type'</span>, <span class="st">'year'</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span>
-<span class="va">gap_long</span><span class="op">$</span><span class="va">year</span> <span class="op">&lt;-</span> <span class="fu">as.integer</span><span class="op">(</span><span class="va">gap_long</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_long</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">separate</span><span class="op">(</span><span class="va">obstype_year</span>, into <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">'obs_type'</span>, <span class="st">'year'</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span>
+<span><span class="va">gap_long</span><span class="op">$</span><span class="va">year</span> <span class="op">&lt;-</span> <span class="fu">as.integer</span><span class="op">(</span><span class="va">gap_long</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></span></code></pre>
 </div>
 <div id="challenge2" class="callout challenge">
 <div class="callout-square">
@@ -566,8 +573,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">obs_type</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">summarize</span><span class="op">(</span>means<span class="op">=</span><span class="fu">mean</span><span class="op">(</span><span class="va">obs_values</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">obs_type</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">summarize</span><span class="op">(</span>means<span class="op">=</span><span class="fu">mean</span><span class="op">(</span><span class="va">obs_values</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -610,9 +617,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span>
-  <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">obs_type</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span>
-<span class="fu">dim</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">obs_type</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span></span>
+<span><span class="fu">dim</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -623,7 +630,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">dim</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">dim</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -634,7 +641,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -645,7 +652,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -657,8 +664,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_normal</span><span class="op">[</span>, <span class="fu">names</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span><span class="op">]</span>
-<span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_normal</span>, <span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_normal</span><span class="op">[</span>, <span class="fu">names</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span><span class="op">]</span></span>
+<span><span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_normal</span>, <span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -675,7 +682,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">gap_normal</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -694,7 +701,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -712,8 +719,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_normal</span> <span class="op">%&gt;%</span> <span class="fu">arrange</span><span class="op">(</span><span class="va">country</span>, <span class="va">year</span><span class="op">)</span>
-<span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_normal</span>, <span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_normal</span> <span class="op">&lt;-</span> <span class="va">gap_normal</span> <span class="op">%&gt;%</span> <span class="fu">arrange</span><span class="op">(</span><span class="va">country</span>, <span class="va">year</span><span class="op">)</span></span>
+<span><span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_normal</span>, <span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -727,8 +734,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_temp</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">unite</span><span class="op">(</span><span class="va">var_ID</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_temp</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_temp</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span> <span class="fu">unite</span><span class="op">(</span><span class="va">var_ID</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_temp</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -743,10 +750,10 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_temp</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span>
-    <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_temp</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_temp</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_temp</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -761,11 +768,11 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_wide_new</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span>
-  <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_wide_new</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_wide_new</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_wide_new</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -833,9 +840,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_ludicrously_wide</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span>
-   <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_ludicrously_wide</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -846,13 +853,13 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gap_wide_betterID</span> <span class="op">&lt;-</span> <span class="fu">separate</span><span class="op">(</span><span class="va">gap_wide_new</span>, <span class="va">ID_var</span>, <span class="fu">c</span><span class="op">(</span><span class="st">"continent"</span>, <span class="st">"country"</span><span class="op">)</span>, sep<span class="op">=</span><span class="st">"_"</span><span class="op">)</span>
-<span class="va">gap_wide_betterID</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span>
-    <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">separate</span><span class="op">(</span><span class="va">ID_var</span>, <span class="fu">c</span><span class="op">(</span><span class="st">"continent"</span>,<span class="st">"country"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">gap_wide_betterID</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gap_wide_betterID</span> <span class="op">&lt;-</span> <span class="fu">separate</span><span class="op">(</span><span class="va">gap_wide_new</span>, <span class="va">ID_var</span>, <span class="fu">c</span><span class="op">(</span><span class="st">"continent"</span>, <span class="st">"country"</span><span class="op">)</span>, sep<span class="op">=</span><span class="st">"_"</span><span class="op">)</span></span>
+<span><span class="va">gap_wide_betterID</span> <span class="op">&lt;-</span> <span class="va">gap_long</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">unite</span><span class="op">(</span><span class="va">ID_var</span>, <span class="va">continent</span>, <span class="va">country</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">unite</span><span class="op">(</span><span class="va">var_names</span>, <span class="va">obs_type</span>, <span class="va">year</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">pivot_wider</span><span class="op">(</span>names_from <span class="op">=</span> <span class="va">var_names</span>, values_from <span class="op">=</span> <span class="va">obs_values</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">separate</span><span class="op">(</span><span class="va">ID_var</span>, <span class="fu">c</span><span class="op">(</span><span class="st">"continent"</span>,<span class="st">"country"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">"_"</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">gap_wide_betterID</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -901,7 +908,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_wide</span>, <span class="va">gap_wide_betterID</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">all.equal</span><span class="op">(</span><span class="va">gap_wide</span>, <span class="va">gap_wide_betterID</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -952,9 +959,9 @@
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -976,7 +983,7 @@
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/instructor/14-tidyr.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>

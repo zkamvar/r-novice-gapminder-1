@@ -65,7 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
           </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
@@ -307,13 +307,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
+                    <ul><li>
+                        <a href="key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="reference.html#glossary">Glossary</a>
+                      </li>
+                      <li>
+                        <a href="profiles.html">Learner Profiles</a>
+                      </li>
+                      <li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -374,10 +382,10 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">data.frame</span><span class="op">(</span>coat <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"calico"</span>, <span class="st">"black"</span>, <span class="st">"tabby"</span><span class="op">)</span>,
-                    weight <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2.1</span>, <span class="fl">5.0</span>, <span class="fl">3.2</span><span class="op">)</span>,
-                    likes_string <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span>
-<span class="fu">write.csv</span><span class="op">(</span>x <span class="op">=</span> <span class="va">cats</span>, file <span class="op">=</span> <span class="st">"data/feline-data.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">data.frame</span><span class="op">(</span>coat <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"calico"</span>, <span class="st">"black"</span>, <span class="st">"tabby"</span><span class="op">)</span>,</span>
+<span>                    weight <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2.1</span>, <span class="fl">5.0</span>, <span class="fl">3.2</span><span class="op">)</span>,</span>
+<span>                    likes_string <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">0</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">write.csv</span><span class="op">(</span>x <span class="op">=</span> <span class="va">cats</span>, file <span class="op">=</span> <span class="st">"data/feline-data.csv"</span>, row.names <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre>
 </div>
 <p>The contents of the new file, <code>feline-data.csv</code>:</p>
 <div class="codewrapper sourceCode" id="cb2">
@@ -404,8 +412,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file <span class="op">=</span> <span class="st">"data/feline-data.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="va">cats</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file <span class="op">=</span> <span class="st">"data/feline-data.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">cats</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -421,7 +429,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">weight</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -432,7 +440,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -445,8 +453,8 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">## Say we discovered that the scale weighs two Kg light:</span>
-<span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="fl">2</span></code></pre>
+<code class="sourceCode R"><span><span class="co">## Say we discovered that the scale weighs two Kg light:</span></span>
+<span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="fl">2</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -457,7 +465,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">paste</span><span class="op">(</span><span class="st">"My cat is"</span>, <span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"My cat is"</span>, <span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -469,7 +477,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="va">cats</span><span class="op">$</span><span class="va">coat</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="va">cats</span><span class="op">$</span><span class="va">coat</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -488,7 +496,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -500,7 +508,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="fl">3.14</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="fl">3.14</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -511,7 +519,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="fl">1L</span><span class="op">)</span> <span class="co"># The L suffix forces the number to be an integer, since by default R uses float numbers</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="fl">1L</span><span class="op">)</span> <span class="co"># The L suffix forces the number to be an integer, since by default R uses float numbers</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -522,7 +530,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="fl">1</span><span class="op">+</span><span class="fl">1i</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="fl">1</span><span class="op">+</span><span class="fl">1i</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -533,7 +541,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -544,7 +552,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="st">'banana'</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="st">'banana'</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -557,7 +565,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">file.show</span><span class="op">(</span><span class="st">"data/feline-data_v2.csv"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">file.show</span><span class="op">(</span><span class="st">"data/feline-data_v2.csv"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb29">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -573,8 +581,8 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data_v2.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data_v2.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -586,7 +594,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="fl">2</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span> <span class="op">+</span> <span class="fl">2</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -604,7 +612,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">class</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">class</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -623,7 +631,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, stringsAsFactors <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
 </div>
 </section><section id="vectors-and-type-coercion"><h2 class="section-heading">Vectors and Type Coercion</h2>
 <hr class="half-width"><p>To better understand this behavior, let’s meet another of the data structures: the <em>vector</em>.</p>
@@ -631,8 +639,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">my_vector</span> <span class="op">&lt;-</span> <span class="fu">vector</span><span class="op">(</span>length <span class="op">=</span> <span class="fl">3</span><span class="op">)</span>
-<span class="va">my_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">my_vector</span> <span class="op">&lt;-</span> <span class="fu">vector</span><span class="op">(</span>length <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">my_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -644,8 +652,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">another_vector</span> <span class="op">&lt;-</span> <span class="fu">vector</span><span class="op">(</span>mode<span class="op">=</span><span class="st">'character'</span>, length<span class="op">=</span><span class="fl">3</span><span class="op">)</span>
-<span class="va">another_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">another_vector</span> <span class="op">&lt;-</span> <span class="fu">vector</span><span class="op">(</span>mode<span class="op">=</span><span class="st">'character'</span>, length<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">another_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -657,7 +665,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">another_vector</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">another_vector</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -669,7 +677,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -707,8 +715,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">combine_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">6</span>,<span class="fl">3</span><span class="op">)</span>
-<span class="va">combine_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">combine_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">6</span>,<span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">combine_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -720,15 +728,15 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">quiz_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">6</span>,<span class="st">'3'</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">quiz_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">6</span>,<span class="st">'3'</span><span class="op">)</span></span></code></pre>
 </div>
 <p>This is something called <em>type coercion</em>, and it is the source of many surprises and the reason why we need to be aware of the basic data types and how R will interpret them. When R encounters a mix of types (here numeric and character) to be combined into a single vector, it will force them all to be the same type. Consider:</p>
 <div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">coercion_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="cn">TRUE</span><span class="op">)</span>
-<span class="va">coercion_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">coercion_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">coercion_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -739,8 +747,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">another_coercion_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">0</span>, <span class="cn">TRUE</span><span class="op">)</span>
-<span class="va">another_coercion_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">another_coercion_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">0</span>, <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="va">another_coercion_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -752,8 +760,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">character_vector_example</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'0'</span>,<span class="st">'2'</span>,<span class="st">'4'</span><span class="op">)</span>
-<span class="va">character_vector_example</span></code></pre>
+<code class="sourceCode R"><span><span class="va">character_vector_example</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'0'</span>,<span class="st">'2'</span>,<span class="st">'4'</span><span class="op">)</span></span>
+<span><span class="va">character_vector_example</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -764,8 +772,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">character_coerced_to_numeric</span> <span class="op">&lt;-</span> <span class="fu">as.numeric</span><span class="op">(</span><span class="va">character_vector_example</span><span class="op">)</span>
-<span class="va">character_coerced_to_numeric</span></code></pre>
+<code class="sourceCode R"><span><span class="va">character_coerced_to_numeric</span> <span class="op">&lt;-</span> <span class="fu">as.numeric</span><span class="op">(</span><span class="va">character_vector_example</span><span class="op">)</span></span>
+<span><span class="va">character_coerced_to_numeric</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -776,8 +784,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">numeric_coerced_to_logical</span> <span class="op">&lt;-</span> <span class="fu">as.logical</span><span class="op">(</span><span class="va">character_coerced_to_numeric</span><span class="op">)</span>
-<span class="va">numeric_coerced_to_logical</span></code></pre>
+<code class="sourceCode R"><span><span class="va">numeric_coerced_to_logical</span> <span class="op">&lt;-</span> <span class="fu">as.logical</span><span class="op">(</span><span class="va">character_coerced_to_numeric</span><span class="op">)</span></span>
+<span><span class="va">numeric_coerced_to_logical</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -790,7 +798,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -801,8 +809,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span> <span class="op">&lt;-</span> <span class="fu">as.logical</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span><span class="op">)</span>
-<span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span> <span class="op">&lt;-</span> <span class="fu">as.logical</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span><span class="op">)</span></span>
+<span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -814,8 +822,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">ab_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span><span class="op">)</span>
-<span class="va">ab_vector</span></code></pre>
+<code class="sourceCode R"><span><span class="va">ab_vector</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span><span class="op">)</span></span>
+<span><span class="va">ab_vector</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -826,8 +834,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">combine_example</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="va">ab_vector</span>, <span class="st">'SWC'</span><span class="op">)</span>
-<span class="va">combine_example</span></code></pre>
+<code class="sourceCode R"><span><span class="va">combine_example</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="va">ab_vector</span>, <span class="st">'SWC'</span><span class="op">)</span></span>
+<span><span class="va">combine_example</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -839,8 +847,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mySeries</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>
-<span class="va">mySeries</span></code></pre>
+<code class="sourceCode R"><span><span class="va">mySeries</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span></span>
+<span><span class="va">mySeries</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -851,7 +859,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">seq</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">seq</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -862,7 +870,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">seq</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>, by<span class="op">=</span><span class="fl">0.1</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">seq</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">10</span>, by<span class="op">=</span><span class="fl">0.1</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -880,8 +888,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">sequence_example</span> <span class="op">&lt;-</span> <span class="fu">seq</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>
-<span class="fu">head</span><span class="op">(</span><span class="va">sequence_example</span>, n<span class="op">=</span><span class="fl">2</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">sequence_example</span> <span class="op">&lt;-</span> <span class="fu">seq</span><span class="op">(</span><span class="fl">10</span><span class="op">)</span></span>
+<span><span class="fu">head</span><span class="op">(</span><span class="va">sequence_example</span>, n<span class="op">=</span><span class="fl">2</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -892,7 +900,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">tail</span><span class="op">(</span><span class="va">sequence_example</span>, n<span class="op">=</span><span class="fl">4</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">tail</span><span class="op">(</span><span class="va">sequence_example</span>, n<span class="op">=</span><span class="fl">4</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -903,7 +911,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">length</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">length</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -914,7 +922,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">class</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">class</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -925,7 +933,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">sequence_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -937,9 +945,9 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">my_example</span> <span class="op">&lt;-</span> <span class="fl">5</span><span class="op">:</span><span class="fl">8</span>
-<span class="fu">names</span><span class="op">(</span><span class="va">my_example</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span><span class="op">)</span>
-<span class="va">my_example</span></code></pre>
+<code class="sourceCode R"><span><span class="va">my_example</span> <span class="op">&lt;-</span> <span class="fl">5</span><span class="op">:</span><span class="fl">8</span></span>
+<span><span class="fu">names</span><span class="op">(</span><span class="va">my_example</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span><span class="op">)</span></span>
+<span><span class="va">my_example</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -951,7 +959,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">my_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">my_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -982,9 +990,9 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">26</span>
-<span class="va">x</span> <span class="op">&lt;-</span> <span class="va">x</span> <span class="op">*</span> <span class="fl">2</span>
-<span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">LETTERS</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">26</span></span>
+<span><span class="va">x</span> <span class="op">&lt;-</span> <span class="va">x</span> <span class="op">*</span> <span class="fl">2</span></span>
+<span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="va">LETTERS</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -996,7 +1004,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">weight</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1007,7 +1015,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">likes_string</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1019,7 +1027,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1038,7 +1046,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1050,8 +1058,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"weight_kg"</span>
-<span class="va">cats</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span> <span class="op">&lt;-</span> <span class="st">"weight_kg"</span></span>
+<span><span class="va">cats</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1070,8 +1078,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">coats</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'tabby'</span>, <span class="st">'tortoiseshell'</span>, <span class="st">'tortoiseshell'</span>, <span class="st">'black'</span>, <span class="st">'tabby'</span><span class="op">)</span>
-<span class="va">coats</span></code></pre>
+<code class="sourceCode R"><span><span class="va">coats</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'tabby'</span>, <span class="st">'tortoiseshell'</span>, <span class="st">'tortoiseshell'</span>, <span class="st">'black'</span>, <span class="st">'tabby'</span><span class="op">)</span></span>
+<span><span class="va">coats</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1083,7 +1091,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1095,8 +1103,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">CATegories</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span>
-<span class="fu">class</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">CATegories</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span></span>
+<span><span class="fu">class</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1107,7 +1115,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1119,7 +1127,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">coats</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1130,7 +1138,7 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">CATegories</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1162,16 +1170,16 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, stringsAsFactors<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, stringsAsFactors<span class="op">=</span><span class="cn">FALSE</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Another solution is use the argument <code>colClasses</code> that allow finer control.</p>
 <div class="codewrapper sourceCode" id="cb112">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, colClasses<span class="op">=</span><span class="fu">c</span><span class="op">(</span><span class="cn">NA</span>, <span class="cn">NA</span>, <span class="st">"character"</span><span class="op">)</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span>file<span class="op">=</span><span class="st">"data/feline-data.csv"</span>, colClasses<span class="op">=</span><span class="fu">c</span><span class="op">(</span><span class="cn">NA</span>, <span class="cn">NA</span>, <span class="st">"character"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Note: new students find the help files difficult to understand; make sure to let them know that this is typical, and encourage them to take their best guess based on semantic meaning, even if they aren’t sure.</p>
 </div>
@@ -1183,9 +1191,9 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mydata</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"case"</span>, <span class="st">"control"</span>, <span class="st">"control"</span>, <span class="st">"case"</span><span class="op">)</span>
-<span class="va">factor_ordering_example</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="va">mydata</span>, levels <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"control"</span>, <span class="st">"case"</span><span class="op">)</span><span class="op">)</span>
-<span class="fu">str</span><span class="op">(</span><span class="va">factor_ordering_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">mydata</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"case"</span>, <span class="st">"control"</span>, <span class="st">"control"</span>, <span class="st">"case"</span><span class="op">)</span></span>
+<span><span class="va">factor_ordering_example</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="va">mydata</span>, levels <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"control"</span>, <span class="st">"case"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="fu">str</span><span class="op">(</span><span class="va">factor_ordering_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1199,8 +1207,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">list_example</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span><span class="fl">1</span>, <span class="st">"a"</span>, <span class="cn">TRUE</span>, <span class="fl">1</span><span class="op">+</span><span class="fl">4i</span><span class="op">)</span>
-<span class="va">list_example</span></code></pre>
+<code class="sourceCode R"><span><span class="va">list_example</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span><span class="fl">1</span>, <span class="st">"a"</span>, <span class="cn">TRUE</span>, <span class="fl">1</span><span class="op">+</span><span class="fl">4i</span><span class="op">)</span></span>
+<span><span class="va">list_example</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1221,8 +1229,8 @@ tabby,3.2,1</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">another_list</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Numbers"</span>, numbers <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="cn">TRUE</span> <span class="op">)</span>
-<span class="va">another_list</span></code></pre>
+<code class="sourceCode R"><span><span class="va">another_list</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Numbers"</span>, numbers <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="cn">TRUE</span> <span class="op">)</span></span>
+<span><span class="va">another_list</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1241,7 +1249,7 @@ $data
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1254,7 +1262,7 @@ $data
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1266,7 +1274,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1278,7 +1286,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1289,7 +1297,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span>,<span class="fl">1</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1301,7 +1309,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1313,7 +1321,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1324,7 +1332,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>,<span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1367,7 +1375,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1382,7 +1390,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1395,7 +1403,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">$</span><span class="va">coat</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1408,7 +1416,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span><span class="st">"coat"</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span><span class="st">"coat"</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1423,7 +1431,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1436,7 +1444,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span>, <span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span>, <span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1449,7 +1457,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">cats</span><span class="op">[</span><span class="fl">1</span>, <span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1468,8 +1476,8 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">matrix_example</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">0</span>, ncol<span class="op">=</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">3</span><span class="op">)</span>
-<span class="va">matrix_example</span></code></pre>
+<code class="sourceCode R"><span><span class="va">matrix_example</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">0</span>, ncol<span class="op">=</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span><span class="va">matrix_example</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1484,7 +1492,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">class</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">class</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1495,7 +1503,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">typeof</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">typeof</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1506,7 +1514,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1517,7 +1525,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">dim</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">dim</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1528,7 +1536,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">nrow</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">nrow</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1539,7 +1547,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">ncol</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">ncol</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1571,8 +1579,8 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">matrix_example</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">0</span>, ncol<span class="op">=</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">3</span><span class="op">)</span>
-<span class="fu">length</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">matrix_example</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">0</span>, ncol<span class="op">=</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span>
+<span><span class="fu">length</span><span class="op">(</span><span class="va">matrix_example</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1609,8 +1617,8 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, ncol<span class="op">=</span><span class="fl">5</span>, nrow<span class="op">=</span><span class="fl">10</span><span class="op">)</span>
-<span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, ncol<span class="op">=</span><span class="fl">5</span>, nrow<span class="op">=</span><span class="fl">10</span>, byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="co"># to fill by row</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, ncol<span class="op">=</span><span class="fl">5</span>, nrow<span class="op">=</span><span class="fl">10</span><span class="op">)</span></span>
+<span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">50</span>, ncol<span class="op">=</span><span class="fl">5</span>, nrow<span class="op">=</span><span class="fl">10</span>, byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span> <span class="co"># to fill by row</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1643,9 +1651,9 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">dataTypes</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'double'</span>, <span class="st">'complex'</span>, <span class="st">'integer'</span>, <span class="st">'character'</span>, <span class="st">'logical'</span><span class="op">)</span>
-<span class="va">dataStructures</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'data.frame'</span>, <span class="st">'vector'</span>, <span class="st">'factor'</span>, <span class="st">'list'</span>, <span class="st">'matrix'</span><span class="op">)</span>
-<span class="va">answer</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span><span class="va">dataTypes</span>, <span class="va">dataStructures</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">dataTypes</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'double'</span>, <span class="st">'complex'</span>, <span class="st">'integer'</span>, <span class="st">'character'</span>, <span class="st">'logical'</span><span class="op">)</span></span>
+<span><span class="va">dataStructures</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'data.frame'</span>, <span class="st">'vector'</span>, <span class="st">'factor'</span>, <span class="st">'list'</span>, <span class="st">'matrix'</span><span class="op">)</span></span>
+<span><span class="va">answer</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span><span class="va">dataTypes</span>, <span class="va">dataStructures</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Note: it’s nice to make a list in big writing on the board or taped to the wall listing all of these types and structures - leave it up for the rest of the workshop to remind people of the importance of these basics.</p>
 </div>
@@ -1699,7 +1707,7 @@ Levels: black calico tabby</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">matrix</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="fl">4</span>, <span class="fl">1</span>, <span class="fl">9</span>, <span class="fl">5</span>, <span class="fl">10</span>, <span class="fl">7</span><span class="op">)</span>, ncol <span class="op">=</span> <span class="fl">2</span>, byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">matrix</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="fl">4</span>, <span class="fl">1</span>, <span class="fl">9</span>, <span class="fl">5</span>, <span class="fl">10</span>, <span class="fl">7</span><span class="op">)</span>, ncol <span class="op">=</span> <span class="fl">2</span>, byrow <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1742,9 +1750,9 @@ Levels: black calico tabby</code></pre>
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1766,7 +1774,7 @@ Levels: black calico tabby</code></pre>
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/04-data-structures-part1.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>

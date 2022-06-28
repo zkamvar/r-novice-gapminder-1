@@ -65,7 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
           </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
@@ -311,13 +311,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
+                    <ul><li>
+                        <a href="key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="reference.html#glossary">Glossary</a>
+                      </li>
+                      <li>
+                        <a href="profiles.html">Learner Profiles</a>
+                      </li>
+                      <li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -376,7 +384,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -387,7 +395,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -398,7 +406,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Asia"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">mean</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Asia"</span>, <span class="st">"gdpPercap"</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -430,14 +438,14 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">install.packages</span><span class="op">(</span><span class="st">'dplyr'</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">'dplyr'</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Now let’s load the package:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">library</span><span class="op">(</span><span class="st">"dplyr"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="st">"dplyr"</span><span class="op">)</span></span></code></pre>
 </div>
 </section><section id="using-select"><h2 class="section-heading">Using select()</h2>
 <hr class="half-width"><p>If, for example, we wanted to move forward with only a few of the variables in our data frame we could use the <code>select()</code> function. This will keep only the variables you select.</p>
@@ -445,20 +453,20 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">year_country_gdp</span> <span class="op">&lt;-</span> <span class="fu">select</span><span class="op">(</span><span class="va">gapminder</span>, <span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">year_country_gdp</span> <span class="op">&lt;-</span> <span class="fu">select</span><span class="op">(</span><span class="va">gapminder</span>, <span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/13-dplyr-fig1.png" alt="Diagram illustrating use of select function to select two columns of a data frame" class="figure mx-auto d-block"> If we want to remove one column only from the <code>gapminder</code> data, for example, removing the <code>continent</code> column.</figure><div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">smaller_gapminder_data</span> <span class="op">&lt;-</span> <span class="fu">select</span><span class="op">(</span><span class="va">gapminder</span>, <span class="op">-</span><span class="va">continent</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">smaller_gapminder_data</span> <span class="op">&lt;-</span> <span class="fu">select</span><span class="op">(</span><span class="va">gapminder</span>, <span class="op">-</span><span class="va">continent</span><span class="op">)</span></span></code></pre>
 </div>
 <p>If we open up <code>year_country_gdp</code> we’ll see that it only contains the year, country and gdpPercap. Above we used ‘normal’ grammar, but the strengths of <code>dplyr</code> lie in combining several functions using pipes. Since the pipes grammar is unlike anything we’ve seen in R before, let’s repeat what we’ve done above using pipes.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">year_country_gdp</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span> <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">year_country_gdp</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span> <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></span></code></pre>
 </div>
 <p>To help you understand why we wrote that in that way, let’s walk through it step by step. First we summon the gapminder data frame and pass it on, using the pipe symbol <code>%&gt;%</code>, to the next step, which is the <code>select()</code> function. In this case we don’t specify which data object we use in the <code>select()</code> function since in gets that from the previous pipe. <strong>Fun Fact</strong>: There is a good chance you have encountered pipes before in the shell. In R, a pipe symbol is <code>%&gt;%</code> while in the shell it is <code>|</code> but the concept is the same!</p>
 <div id="callout2" class="callout callout">
@@ -474,9 +482,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">tidy_gdp</span> <span class="op">&lt;-</span> <span class="va">year_country_gdp</span> <span class="op">%&gt;%</span> <span class="fu">rename</span><span class="op">(</span>gdp_per_capita <span class="op">=</span> <span class="va">gdpPercap</span><span class="op">)</span>
-
-<span class="fu">head</span><span class="op">(</span><span class="va">tidy_gdp</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">tidy_gdp</span> <span class="op">&lt;-</span> <span class="va">year_country_gdp</span> <span class="op">%&gt;%</span> <span class="fu">rename</span><span class="op">(</span>gdp_per_capita <span class="op">=</span> <span class="va">gdpPercap</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu">head</span><span class="op">(</span><span class="va">tidy_gdp</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -498,18 +506,18 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">year_country_gdp_euro</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Europe"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">year_country_gdp_euro</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Europe"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">gdpPercap</span><span class="op">)</span></span></code></pre>
 </div>
 <p>If we now want to show life expectancy of European countries but only for a specific year (e.g., 2007), we can do as below.</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">europe_lifeExp_2007</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Europe"</span>, <span class="va">year</span> <span class="op">==</span> <span class="fl">2007</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="fu">select</span><span class="op">(</span><span class="va">country</span>, <span class="va">lifeExp</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">europe_lifeExp_2007</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Europe"</span>, <span class="va">year</span> <span class="op">==</span> <span class="fl">2007</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="fu">select</span><span class="op">(</span><span class="va">country</span>, <span class="va">lifeExp</span><span class="op">)</span></span></code></pre>
 </div>
 <div id="challenge1" class="callout challenge">
 <div class="callout-square">
@@ -529,15 +537,15 @@
   Solution to Challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">year_country_lifeExp_Africa</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-                           <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-                           <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">lifeExp</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">year_country_lifeExp_Africa</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>                           <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>                           <span class="fu">select</span><span class="op">(</span><span class="va">year</span>, <span class="va">country</span>, <span class="va">lifeExp</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -550,7 +558,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -567,7 +575,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span> <span class="op">%&gt;%</span> <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">str</span><span class="op">(</span><span class="va">gapminder</span> <span class="op">%&gt;%</span> <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -597,9 +605,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gdp_bycontinents</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gdp_bycontinents</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/13-dplyr-fig3.png" alt="Diagram illustrating the use of group by and summarize together to create a new variable" class="figure mx-auto d-block"></figure><div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -631,17 +639,17 @@
   Solution to Challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">lifeExp_bycountry</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-   <span class="fu">group_by</span><span class="op">(</span><span class="va">country</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">summarize</span><span class="op">(</span>mean_lifeExp <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span>
-<span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span>
-   <span class="fu">filter</span><span class="op">(</span><span class="va">mean_lifeExp</span> <span class="op">==</span> <span class="fu">min</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span> <span class="op">|</span> <span class="va">mean_lifeExp</span> <span class="op">==</span> <span class="fu">max</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">lifeExp_bycountry</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">group_by</span><span class="op">(</span><span class="va">country</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">summarize</span><span class="op">(</span>mean_lifeExp <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">filter</span><span class="op">(</span><span class="va">mean_lifeExp</span> <span class="op">==</span> <span class="fu">min</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span> <span class="op">|</span> <span class="va">mean_lifeExp</span> <span class="op">==</span> <span class="fu">max</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -657,9 +665,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span>
-   <span class="fu">arrange</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">arrange</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -673,9 +681,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span>
-   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -690,9 +698,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span>
-   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">lifeExp_bycountry</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">head</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -711,9 +719,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gdp_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gdp_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -726,12 +734,12 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gdp_pop_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,
-              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gdp_pop_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,</span>
+<span>              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -746,9 +754,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">filter</span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">count</span><span class="op">(</span><span class="va">continent</span>, sort <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">filter</span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">count</span><span class="op">(</span><span class="va">continent</span>, sort <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -765,9 +773,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>se_le <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">/</span><span class="fu">sqrt</span><span class="op">(</span><span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>se_le <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">/</span><span class="fu">sqrt</span><span class="op">(</span><span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -786,13 +794,13 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>
-      mean_le <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,
-      min_le <span class="op">=</span> <span class="fu">min</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,
-      max_le <span class="op">=</span> <span class="fu">max</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,
-      se_le <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">/</span><span class="fu">sqrt</span><span class="op">(</span><span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span></span>
+<span>      mean_le <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,</span>
+<span>      min_le <span class="op">=</span> <span class="fu">min</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,</span>
+<span>      max_le <span class="op">=</span> <span class="fu">max</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span>,</span>
+<span>      se_le <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">/</span><span class="fu">sqrt</span><span class="op">(</span><span class="fu">n</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -812,15 +820,15 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gdp_pop_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">mutate</span><span class="op">(</span>gdp_billion <span class="op">=</span> <span class="va">gdpPercap</span><span class="op">*</span><span class="va">pop</span><span class="op">/</span><span class="fl">10</span><span class="op">^</span><span class="fl">9</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>,<span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,
-              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,
-              mean_gdp_billion <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span>,
-              sd_gdp_billion <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gdp_pop_bycontinents_byyear</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">mutate</span><span class="op">(</span>gdp_billion <span class="op">=</span> <span class="va">gdpPercap</span><span class="op">*</span><span class="va">pop</span><span class="op">/</span><span class="fl">10</span><span class="op">^</span><span class="fl">9</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>,<span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,</span>
+<span>              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,</span>
+<span>              mean_gdp_billion <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span>,</span>
+<span>              sd_gdp_billion <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -834,17 +842,17 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">## keeping all data but "filtering" after a certain condition</span>
-<span class="co"># calculate GDP only for people with a life expectation above 25</span>
-<span class="va">gdp_pop_bycontinents_byyear_above25</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">mutate</span><span class="op">(</span>gdp_billion <span class="op">=</span> <span class="fu">ifelse</span><span class="op">(</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">25</span>, <span class="va">gdpPercap</span> <span class="op">*</span> <span class="va">pop</span> <span class="op">/</span> <span class="fl">10</span><span class="op">^</span><span class="fl">9</span>, <span class="cn">NA</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,
-              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,
-              mean_gdp_billion <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span>,
-              sd_gdp_billion <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co">## keeping all data but "filtering" after a certain condition</span></span>
+<span><span class="co"># calculate GDP only for people with a life expectation above 25</span></span>
+<span><span class="va">gdp_pop_bycontinents_byyear_above25</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">mutate</span><span class="op">(</span>gdp_billion <span class="op">=</span> <span class="fu">ifelse</span><span class="op">(</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">25</span>, <span class="va">gdpPercap</span> <span class="op">*</span> <span class="va">pop</span> <span class="op">/</span> <span class="fl">10</span><span class="op">^</span><span class="fl">9</span>, <span class="cn">NA</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              sd_gdpPercap <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              mean_pop <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,</span>
+<span>              sd_pop <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">pop</span><span class="op">)</span>,</span>
+<span>              mean_gdp_billion <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span>,</span>
+<span>              sd_gdp_billion <span class="op">=</span> <span class="fu">sd</span><span class="op">(</span><span class="va">gdp_billion</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -856,13 +864,13 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co">## updating only if certain condition is fullfilled</span>
-<span class="co"># for life expectations above 40 years, the gpd to be expected in the future is scaled</span>
-<span class="va">gdp_future_bycontinents_byyear_high_lifeExp</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-    <span class="fu">mutate</span><span class="op">(</span>gdp_futureExpectation <span class="op">=</span> <span class="fu">ifelse</span><span class="op">(</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">40</span>, <span class="va">gdpPercap</span> <span class="op">*</span> <span class="fl">1.5</span>, <span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span>
-    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,
-              mean_gdpPercap_expected <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_futureExpectation</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co">## updating only if certain condition is fullfilled</span></span>
+<span><span class="co"># for life expectations above 40 years, the gpd to be expected in the future is scaled</span></span>
+<span><span class="va">gdp_future_bycontinents_byyear_high_lifeExp</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">mutate</span><span class="op">(</span>gdp_futureExpectation <span class="op">=</span> <span class="fu">ifelse</span><span class="op">(</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">40</span>, <span class="va">gdpPercap</span> <span class="op">*</span> <span class="fl">1.5</span>, <span class="va">gdpPercap</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span>, <span class="va">year</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">summarize</span><span class="op">(</span>mean_gdpPercap <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdpPercap</span><span class="op">)</span>,</span>
+<span>              mean_gdpPercap_expected <span class="op">=</span> <span class="fu">mean</span><span class="op">(</span><span class="va">gdp_futureExpectation</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -877,56 +885,56 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">install.packages</span><span class="op">(</span><span class="st">'ggplot2'</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">'ggplot2'</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb48">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">library</span><span class="op">(</span><span class="st">"ggplot2"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="kw">library</span><span class="op">(</span><span class="st">"ggplot2"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>In the plotting lesson we looked at how to make a multi-panel figure by adding a layer of facet panels using <code>ggplot2</code>. Here is the code we used (with some extra comments):</p>
 <div class="codewrapper sourceCode" id="cb49">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Filter countries located in the Americas</span>
-<span class="va">americas</span> <span class="op">&lt;-</span> <span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span>, <span class="op">]</span>
-<span class="co"># Make the plot</span>
-<span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">americas</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">facet_wrap</span><span class="op">(</span> <span class="op">~</span> <span class="va">country</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme</span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># Filter countries located in the Americas</span></span>
+<span><span class="va">americas</span> <span class="op">&lt;-</span> <span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span>, <span class="op">]</span></span>
+<span><span class="co"># Make the plot</span></span>
+<span><span class="fu">ggplot</span><span class="op">(</span>data <span class="op">=</span> <span class="va">americas</span>, mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">facet_wrap</span><span class="op">(</span> <span class="op">~</span> <span class="va">country</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme</span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/13-dplyr-rendered-unnamed-chunk-27-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>This code makes the right plot but it also creates an intermediate variable (<code>americas</code>) that we might not have any other uses for. Just as we used <code>%&gt;%</code> to pipe data along a chain of <code>dplyr</code> functions we can use it to pass data to <code>ggplot()</code>. Because <code>%&gt;%</code> replaces the first argument in a function we don’t need to specify the <code>data =</code> argument in the <code>ggplot()</code> function. By combining <code>dplyr</code> and <code>ggplot2</code> functions we can make the same figure without creating any new variables or modifying the data.</p>
 <div class="codewrapper sourceCode" id="cb50">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span> <span class="op">%&gt;%</span>
-  <span class="co"># Filter countries located in the Americas</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="co"># Make the plot</span>
-  <span class="fu">ggplot</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">facet_wrap</span><span class="op">(</span> <span class="op">~</span> <span class="va">country</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme</span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="co"># Filter countries located in the Americas</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Americas"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="co"># Make the plot</span></span>
+<span>  <span class="fu">ggplot</span><span class="op">(</span>mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">facet_wrap</span><span class="op">(</span> <span class="op">~</span> <span class="va">country</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme</span><span class="op">(</span>axis.text.x <span class="op">=</span> <span class="fu">element_text</span><span class="op">(</span>angle <span class="op">=</span> <span class="fl">45</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/13-dplyr-rendered-unnamed-chunk-28-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><p>More examples of using the function <code>mutate()</code> and the <code>ggplot2</code> package.</p>
 <div class="codewrapper sourceCode" id="cb51">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span> <span class="op">%&gt;%</span>
-  <span class="co"># extract first letter of country name into new column</span>
-  <span class="fu">mutate</span><span class="op">(</span>startsWith <span class="op">=</span> <span class="fu">substr</span><span class="op">(</span><span class="va">country</span>, <span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="co"># only keep countries starting with A or Z</span>
-  <span class="fu">filter</span><span class="op">(</span><span class="va">startsWith</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"Z"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-  <span class="co"># plot lifeExp into facets</span>
-  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span>, colour <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">facet_wrap</span><span class="op">(</span><span class="fu">vars</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="co"># extract first letter of country name into new column</span></span>
+<span>  <span class="fu">mutate</span><span class="op">(</span>startsWith <span class="op">=</span> <span class="fu">substr</span><span class="op">(</span><span class="va">country</span>, <span class="fl">1</span>, <span class="fl">1</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="co"># only keep countries starting with A or Z</span></span>
+<span>  <span class="fu">filter</span><span class="op">(</span><span class="va">startsWith</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"Z"</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>  <span class="co"># plot lifeExp into facets</span></span>
+<span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">year</span>, y <span class="op">=</span> <span class="va">lifeExp</span>, colour <span class="op">=</span> <span class="va">continent</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_line</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">facet_wrap</span><span class="op">(</span><span class="fu">vars</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">theme_minimal</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
 <figure><img src="fig/13-dplyr-rendered-unnamed-chunk-29-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge3" class="callout challenge">
 <div class="callout-square">
@@ -946,18 +954,18 @@
   Solution to Advanced Challenge
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb52">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">lifeExp_2countries_bycontinents</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span>
-   <span class="fu">filter</span><span class="op">(</span><span class="va">year</span><span class="op">==</span><span class="fl">2002</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">sample_n</span><span class="op">(</span><span class="fl">2</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">summarize</span><span class="op">(</span>mean_lifeExp<span class="op">=</span><span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span>
-   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">lifeExp_2countries_bycontinents</span> <span class="op">&lt;-</span> <span class="va">gapminder</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">filter</span><span class="op">(</span><span class="va">year</span><span class="op">==</span><span class="fl">2002</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">group_by</span><span class="op">(</span><span class="va">continent</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">sample_n</span><span class="op">(</span><span class="fl">2</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">summarize</span><span class="op">(</span>mean_lifeExp<span class="op">=</span><span class="fu">mean</span><span class="op">(</span><span class="va">lifeExp</span><span class="op">)</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>   <span class="fu">arrange</span><span class="op">(</span><span class="fu">desc</span><span class="op">(</span><span class="va">mean_lifeExp</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1007,9 +1015,9 @@
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1031,7 +1039,7 @@
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/13-dplyr.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>

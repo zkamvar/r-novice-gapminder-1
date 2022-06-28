@@ -65,8 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li>
-          </ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -311,13 +310,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li>
+                    <ul><li>
+                        <a href="../instructor/key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/instructor-notes.html">Instructor Notes</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/images.html">Extract All Images</a>
+                      </li>
+                      
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -380,9 +387,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span>
-<span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span>
-<span class="va">x</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span></span>
+<span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span></span>
+<span><span class="va">x</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -408,25 +415,25 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span class="va">a</span> 
-<span class="fl">5.4</span></code></pre>
+<pre class="output" tabindex="0"><code><span>  <span class="va">a</span> </span>
+<span><span class="fl">5.4</span> </span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">4</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">4</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span class="va">d</span> 
-<span class="fl">4.8</span></code></pre>
+<pre class="output" tabindex="0"><code><span>  <span class="va">d</span> </span>
+<span><span class="fl">4.8</span> </span></code></pre>
 </div>
 <p>It may look different, but the square brackets operator is a function. For vectors (and matrices), it means “get me the nth element”.</p>
 <p>We can ask for multiple elements at once:</p>
@@ -434,7 +441,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -447,7 +454,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -460,7 +467,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fl">1</span><span class="op">:</span><span class="fl">4</span></code></pre>
+<code class="sourceCode R"><span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -471,7 +478,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span>, <span class="fl">4</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -483,7 +490,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span>,<span class="fl">3</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">1</span>,<span class="fl">3</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -496,7 +503,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">6</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">6</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -510,7 +517,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">0</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">0</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -534,7 +541,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">2</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">2</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -547,7 +554,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">5</span><span class="op">)</span><span class="op">]</span>  <span class="co"># or x[-c(1,5)]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="op">-</span><span class="fl">1</span>, <span class="op">-</span><span class="fl">5</span><span class="op">)</span><span class="op">]</span>  <span class="co"># or x[-c(1,5)]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -567,7 +574,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span></code></pre>
 </div>
 <p>This gives a somewhat cryptic error:</p>
 <div class="codewrapper">
@@ -581,7 +588,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -597,8 +604,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">4</span><span class="op">]</span>
-<span class="va">x</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fl">4</span><span class="op">]</span></span>
+<span><span class="va">x</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -618,9 +625,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span>
-<span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span>
-<span class="fu">print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span></span>
+<span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span></span>
+<span><span class="fu">print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -652,7 +659,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fl">2</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fl">2</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -664,7 +671,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">5</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>,<span class="fl">5</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -676,7 +683,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -694,8 +701,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span>a<span class="op">=</span><span class="fl">5.4</span>, b<span class="op">=</span><span class="fl">6.2</span>, c<span class="op">=</span><span class="fl">7.1</span>, d<span class="op">=</span><span class="fl">4.8</span>, e<span class="op">=</span><span class="fl">7.5</span><span class="op">)</span> <span class="co"># we can name a vector 'on the fly'</span>
-<span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"c"</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span>a<span class="op">=</span><span class="fl">5.4</span>, b<span class="op">=</span><span class="fl">6.2</span>, c<span class="op">=</span><span class="fl">7.1</span>, d<span class="op">=</span><span class="fl">4.8</span>, e<span class="op">=</span><span class="fl">7.5</span><span class="op">)</span> <span class="co"># we can name a vector 'on the fly'</span></span>
+<span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"c"</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -711,7 +718,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -724,7 +731,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="va">x</span> <span class="op">&gt;</span> <span class="fl">7</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="va">x</span> <span class="op">&gt;</span> <span class="fl">7</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -738,13 +745,13 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">==</span> <span class="st">"a"</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">==</span> <span class="st">"a"</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span class="va">a</span> 
-<span class="fl">5.4</span></code></pre>
+<pre class="output" tabindex="0"><code><span>  <span class="va">a</span> </span>
+<span><span class="fl">5.4</span> </span></code></pre>
 </div>
 <div id="callout4" class="callout callout">
 <div class="callout-square">
@@ -777,9 +784,9 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span>
-<span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span>
-<span class="fu">print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="fl">5.4</span>, <span class="fl">6.2</span>, <span class="fl">7.1</span>, <span class="fl">4.8</span>, <span class="fl">7.5</span><span class="op">)</span></span>
+<span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'b'</span>, <span class="st">'c'</span>, <span class="st">'d'</span>, <span class="st">'e'</span><span class="op">)</span></span>
+<span><span class="fu">print</span><span class="op">(</span><span class="va">x</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -804,8 +811,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x_subset</span> <span class="op">&lt;-</span> <span class="va">x</span><span class="op">[</span><span class="va">x</span><span class="op">&lt;</span><span class="fl">7</span> <span class="op">&amp;</span> <span class="va">x</span><span class="op">&gt;</span><span class="fl">4</span><span class="op">]</span>
-<span class="fu">print</span><span class="op">(</span><span class="va">x_subset</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x_subset</span> <span class="op">&lt;-</span> <span class="va">x</span><span class="op">[</span><span class="va">x</span><span class="op">&lt;</span><span class="fl">7</span> <span class="op">&amp;</span> <span class="va">x</span><span class="op">&gt;</span><span class="fl">4</span><span class="op">]</span></span>
+<span><span class="fu">print</span><span class="op">(</span><span class="va">x_subset</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -829,8 +836,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span>
-<span class="va">x</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fl">1</span><span class="op">:</span><span class="fl">3</span></span>
+<span><span class="va">x</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -841,8 +848,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'a'</span>, <span class="st">'a'</span><span class="op">)</span>
-<span class="va">x</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">'a'</span>, <span class="st">'a'</span>, <span class="st">'a'</span><span class="op">)</span></span>
+<span><span class="va">x</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -854,19 +861,19 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="st">'a'</span><span class="op">]</span>  <span class="co"># only returns first value</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="st">'a'</span><span class="op">]</span>  <span class="co"># only returns first value</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="output" tabindex="0"><code><span class="va">a</span> 
-<span class="fl">1</span></code></pre>
+<pre class="output" tabindex="0"><code><span><span class="va">a</span> </span>
+<span><span class="fl">1</span> </span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb58">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">==</span> <span class="st">'a'</span><span class="op">]</span>  <span class="co"># returns all three values</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">==</span> <span class="st">'a'</span><span class="op">]</span>  <span class="co"># returns all three values</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -894,8 +901,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span>a<span class="op">=</span><span class="fl">5.4</span>, b<span class="op">=</span><span class="fl">6.2</span>, c<span class="op">=</span><span class="fl">7.1</span>, d<span class="op">=</span><span class="fl">4.8</span>, e<span class="op">=</span><span class="fl">7.5</span><span class="op">)</span> <span class="co"># we start again by naming a vector 'on the fly'</span>
-<span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="st">"a"</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span>a<span class="op">=</span><span class="fl">5.4</span>, b<span class="op">=</span><span class="fl">6.2</span>, c<span class="op">=</span><span class="fl">7.1</span>, d<span class="op">=</span><span class="fl">4.8</span>, e<span class="op">=</span><span class="fl">7.5</span><span class="op">)</span> <span class="co"># we start again by naming a vector 'on the fly'</span></span>
+<span><span class="va">x</span><span class="op">[</span><span class="op">-</span><span class="st">"a"</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -907,7 +914,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">!=</span> <span class="st">"a"</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">!=</span> <span class="st">"a"</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -920,7 +927,7 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">!=</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"c"</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span><span class="op">!=</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"c"</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -943,7 +950,7 @@ shorter object length</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">!=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"c"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">!=</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"c"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">WARNING<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -964,7 +971,7 @@ shorter object length</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">x</span><span class="op">[</span><span class="op">!</span> <span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"c"</span><span class="op">)</span> <span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">x</span><span class="op">[</span><span class="op">!</span> <span class="fu">names</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"c"</span><span class="op">)</span> <span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -985,13 +992,13 @@ shorter object length</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">seAsia</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Myanmar"</span>,<span class="st">"Thailand"</span>,<span class="st">"Cambodia"</span>,<span class="st">"Vietnam"</span>,<span class="st">"Laos"</span><span class="op">)</span>
-<span class="co">## read in the gapminder data that we downloaded in episode 2</span>
-<span class="va">gapminder</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"data/gapminder_data.csv"</span>, header<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span>
-<span class="co">## extract the `country` column from a data frame (we'll see this later);</span>
-<span class="co">## convert from a factor to a character;</span>
-<span class="co">## and get just the non-repeated elements</span>
-<span class="va">countries</span> <span class="op">&lt;-</span> <span class="fu">unique</span><span class="op">(</span><span class="fu">as.character</span><span class="op">(</span><span class="va">gapminder</span><span class="op">$</span><span class="va">country</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">seAsia</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Myanmar"</span>,<span class="st">"Thailand"</span>,<span class="st">"Cambodia"</span>,<span class="st">"Vietnam"</span>,<span class="st">"Laos"</span><span class="op">)</span></span>
+<span><span class="co">## read in the gapminder data that we downloaded in episode 2</span></span>
+<span><span class="va">gapminder</span> <span class="op">&lt;-</span> <span class="fu">read.csv</span><span class="op">(</span><span class="st">"data/gapminder_data.csv"</span>, header<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="co">## extract the `country` column from a data frame (we'll see this later);</span></span>
+<span><span class="co">## convert from a factor to a character;</span></span>
+<span><span class="co">## and get just the non-repeated elements</span></span>
+<span><span class="va">countries</span> <span class="op">&lt;-</span> <span class="fu">unique</span><span class="op">(</span><span class="fu">as.character</span><span class="op">(</span><span class="va">gapminder</span><span class="op">$</span><span class="va">country</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <p>There’s a wrong way (using only <code>==</code>), which will give you a warning; a clunky way (using the logical operators <code>==</code> and <code>|</code>); and an elegant way (using <code>%in%</code>). See whether you can come up with all three and explain how they (don’t) work.</p>
 </div>
@@ -1012,8 +1019,8 @@ shorter object length</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"> <span class="op">(</span><span class="va">countries</span><span class="op">==</span><span class="st">"Myanmar"</span> <span class="op">|</span> <span class="va">countries</span><span class="op">==</span><span class="st">"Thailand"</span> <span class="op">|</span>
- <span class="va">countries</span><span class="op">==</span><span class="st">"Cambodia"</span> <span class="op">|</span> <span class="va">countries</span> <span class="op">==</span> <span class="st">"Vietnam"</span> <span class="op">|</span> <span class="va">countries</span><span class="op">==</span><span class="st">"Laos"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span> <span class="op">(</span><span class="va">countries</span><span class="op">==</span><span class="st">"Myanmar"</span> <span class="op">|</span> <span class="va">countries</span><span class="op">==</span><span class="st">"Thailand"</span> <span class="op">|</span></span>
+<span> <span class="va">countries</span><span class="op">==</span><span class="st">"Cambodia"</span> <span class="op">|</span> <span class="va">countries</span> <span class="op">==</span> <span class="st">"Vietnam"</span> <span class="op">|</span> <span class="va">countries</span><span class="op">==</span><span class="st">"Laos"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>(or <code>countries==seAsia[1] | countries==seAsia[2] | ...</code>). This gives the correct values, but hopefully you can see how awkward it is (what if we wanted to select countries from a much longer list?).</p>
 <ul><li>The best way to do this problem is <code>countries %in% seAsia</code>, which is both correct and easy to type (and read).</li>
@@ -1039,8 +1046,8 @@ shorter object length</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"c"</span>, <span class="st">"d"</span><span class="op">)</span><span class="op">)</span>
-<span class="va">f</span><span class="op">[</span><span class="va">f</span> <span class="op">==</span> <span class="st">"a"</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">f</span> <span class="op">&lt;-</span> <span class="fu">factor</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>, <span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"c"</span>, <span class="st">"d"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">f</span><span class="op">[</span><span class="va">f</span> <span class="op">==</span> <span class="st">"a"</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1052,7 +1059,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">f</span><span class="op">[</span><span class="va">f</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"b"</span>, <span class="st">"c"</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">f</span><span class="op">[</span><span class="va">f</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="st">"b"</span>, <span class="st">"c"</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1064,7 +1071,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">f</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">f</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1077,7 +1084,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">f</span><span class="op">[</span><span class="op">-</span><span class="fl">3</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">f</span><span class="op">[</span><span class="op">-</span><span class="fl">3</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1091,9 +1098,9 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">set.seed</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span>
-<span class="va">m</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fu">rnorm</span><span class="op">(</span><span class="fl">6</span><span class="op">*</span><span class="fl">4</span><span class="op">)</span>, ncol<span class="op">=</span><span class="fl">4</span>, nrow<span class="op">=</span><span class="fl">6</span><span class="op">)</span>
-<span class="va">m</span><span class="op">[</span><span class="fl">3</span><span class="op">:</span><span class="fl">4</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">1</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">set.seed</span><span class="op">(</span><span class="fl">1</span><span class="op">)</span></span>
+<span><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fu">rnorm</span><span class="op">(</span><span class="fl">6</span><span class="op">*</span><span class="fl">4</span><span class="op">)</span>, ncol<span class="op">=</span><span class="fl">4</span>, nrow<span class="op">=</span><span class="fl">6</span><span class="op">)</span></span>
+<span><span class="va">m</span><span class="op">[</span><span class="fl">3</span><span class="op">:</span><span class="fl">4</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">1</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1107,7 +1114,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span><span class="op">[</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span><span class="op">[</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">4</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1125,7 +1132,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1137,7 +1144,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span><span class="op">[</span><span class="fl">3</span>, , drop<span class="op">=</span><span class="cn">FALSE</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span><span class="op">[</span><span class="fl">3</span>, , drop<span class="op">=</span><span class="cn">FALSE</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1150,7 +1157,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span><span class="op">[</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">6</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span><span class="op">[</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">3</span>,<span class="fl">6</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1173,7 +1180,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span><span class="op">[</span><span class="fl">5</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span><span class="op">[</span><span class="fl">5</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1185,7 +1192,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">2</span>, ncol<span class="op">=</span><span class="fl">3</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">2</span>, ncol<span class="op">=</span><span class="fl">3</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1199,7 +1206,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">2</span>, ncol<span class="op">=</span><span class="fl">3</span>, byrow<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">6</span>, nrow<span class="op">=</span><span class="fl">2</span>, ncol<span class="op">=</span><span class="fl">3</span>, byrow<span class="op">=</span><span class="cn">TRUE</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1221,8 +1228,8 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">18</span>, nrow<span class="op">=</span><span class="fl">3</span>, ncol<span class="op">=</span><span class="fl">6</span><span class="op">)</span>
-<span class="fu">print</span><span class="op">(</span><span class="va">m</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">m</span> <span class="op">&lt;-</span> <span class="fu">matrix</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">18</span>, nrow<span class="op">=</span><span class="fl">3</span>, ncol<span class="op">=</span><span class="fl">6</span><span class="op">)</span></span>
+<span><span class="fu">print</span><span class="op">(</span><span class="va">m</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1261,8 +1268,8 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>a <span class="op">=</span> <span class="st">"Software Carpentry"</span>, b <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="fu">head</span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span><span class="op">)</span>
-<span class="va">xlist</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>a <span class="op">=</span> <span class="st">"Software Carpentry"</span>, b <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="fu">head</span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">xlist</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1276,7 +1283,7 @@ Levels: a b c d</code></pre>
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1292,7 +1299,7 @@ $b
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1305,7 +1312,7 @@ $b
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1317,7 +1324,7 @@ $b
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1329,7 +1336,7 @@ $b
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="st">"a"</span><span class="op">]</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="st">"a"</span><span class="op">]</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1341,7 +1348,7 @@ $b
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">$</span><span class="va">data</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">$</span><span class="va">data</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1366,7 +1373,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>a <span class="op">=</span> <span class="st">"Software Carpentry"</span>, b <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="fu">head</span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span> <span class="op">&lt;-</span> <span class="fu">list</span><span class="op">(</span>a <span class="op">=</span> <span class="st">"Software Carpentry"</span>, b <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fl">10</span>, data <span class="op">=</span> <span class="fu">head</span><span class="op">(</span><span class="va">mtcars</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Using your knowledge of both list and vector subsetting, extract the number 2 from xlist. Hint: the number 2 is contained within the “b” item in the list.</p>
 </div>
@@ -1385,7 +1392,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">$</span><span class="va">b</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">$</span><span class="va">b</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1396,7 +1403,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="fl">2</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1407,7 +1414,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">xlist</span><span class="op">[[</span><span class="st">"b"</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">xlist</span><span class="op">[[</span><span class="st">"b"</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">2</span><span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1430,7 +1437,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">aov</span><span class="op">(</span><span class="va">pop</span> <span class="op">~</span> <span class="va">lifeExp</span>, data<span class="op">=</span><span class="va">gapminder</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">mod</span> <span class="op">&lt;-</span> <span class="fu">aov</span><span class="op">(</span><span class="va">pop</span> <span class="op">~</span> <span class="va">lifeExp</span>, data<span class="op">=</span><span class="va">gapminder</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Extract the residual degrees of freedom (hint: <code>attributes()</code> will help you)</p>
 </div>
@@ -1449,13 +1456,13 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">attributes</span><span class="op">(</span><span class="va">mod</span><span class="op">)</span> <span class="co">## `df.residual` is one of the names of `mod`</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">attributes</span><span class="op">(</span><span class="va">mod</span><span class="op">)</span> <span class="co">## `df.residual` is one of the names of `mod`</span></span></code></pre>
 </div>
 <div class="codewrapper sourceCode" id="cb123">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">mod</span><span class="op">$</span><span class="va">df.residual</span></code></pre>
+<code class="sourceCode R"><span><span class="va">mod</span><span class="op">$</span><span class="va">df.residual</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1468,7 +1475,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[</span><span class="fl">3</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1486,7 +1493,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[[</span><span class="st">"lifeExp"</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">[[</span><span class="st">"lifeExp"</span><span class="op">]</span><span class="op">]</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1498,7 +1505,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1510,7 +1517,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">3</span>,<span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1525,7 +1532,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span><span class="fl">3</span>,<span class="op">]</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1553,28 +1560,28 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span>,<span class="op">-</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">]</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>Extract the rows where the life expectancy is longer the 80 years</li>
 </ol><div class="codewrapper sourceCode" id="cb136">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">80</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">80</span><span class="op">]</span></span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal"><li>Extract the first row, and the fourth and fifth columns (<code>continent</code> and <code>lifeExp</code>).</li>
 </ol><div class="codewrapper sourceCode" id="cb137">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">5</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">4</span>, <span class="fl">5</span><span class="op">]</span></span></code></pre>
 </div>
 <ol start="5" style="list-style-type: decimal"><li>Advanced: extract rows that contain information for the years 2002 and 2007</li>
 </ol><div class="codewrapper sourceCode" id="cb138">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span> <span class="op">|</span> <span class="fl">2007</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span> <span class="op">|</span> <span class="fl">2007</span>,<span class="op">]</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1594,41 +1601,41 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># gapminder[gapminder$year = 1957,]</span>
-<span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">1957</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># gapminder[gapminder$year = 1957,]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">1957</span>,<span class="op">]</span></span></code></pre>
 </div>
 <ol start="2" style="list-style-type: decimal"><li>Extract all columns except 1 through to 4</li>
 </ol><div class="codewrapper sourceCode" id="cb140">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># gapminder[,-1:4]</span>
-<span class="va">gapminder</span><span class="op">[</span>,<span class="op">-</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># gapminder[,-1:4]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span>,<span class="op">-</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">4</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <ol start="3" style="list-style-type: decimal"><li>Extract the rows where the life expectancy is longer than 80 years</li>
 </ol><div class="codewrapper sourceCode" id="cb141">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># gapminder[gapminder$lifeExp &gt; 80]</span>
-<span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">80</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># gapminder[gapminder$lifeExp &gt; 80]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">lifeExp</span> <span class="op">&gt;</span> <span class="fl">80</span>,<span class="op">]</span></span></code></pre>
 </div>
 <ol start="4" style="list-style-type: decimal"><li>Extract the first row, and the fourth and fifth columns (<code>continent</code> and <code>lifeExp</code>).</li>
 </ol><div class="codewrapper sourceCode" id="cb142">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># gapminder[1, 4, 5]</span>
-<span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">4</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># gapminder[1, 4, 5]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span><span class="fl">1</span>, <span class="fu">c</span><span class="op">(</span><span class="fl">4</span>, <span class="fl">5</span><span class="op">)</span><span class="op">]</span></span></code></pre>
 </div>
 <ol start="5" style="list-style-type: decimal"><li>Advanced: extract rows that contain information for the years 2002 and 2007</li>
 </ol><div class="codewrapper sourceCode" id="cb143">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># gapminder[gapminder$year == 2002 | 2007,]</span>
-<span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span> <span class="op">|</span> <span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2007</span>,<span class="op">]</span>
-<span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2002</span>, <span class="fl">2007</span><span class="op">)</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># gapminder[gapminder$year == 2002 | 2007,]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2002</span> <span class="op">|</span> <span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">==</span> <span class="fl">2007</span>,<span class="op">]</span></span>
+<span><span class="va">gapminder</span><span class="op">[</span><span class="va">gapminder</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="fu">c</span><span class="op">(</span><span class="fl">2002</span>, <span class="fl">2007</span><span class="op">)</span>,<span class="op">]</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1662,7 +1669,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">gapminder_small</span> <span class="op">&lt;-</span> <span class="va">gapminder</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span>, <span class="fl">19</span><span class="op">:</span><span class="fl">23</span><span class="op">)</span>,<span class="op">]</span></code></pre>
+<code class="sourceCode R"><span><span class="va">gapminder_small</span> <span class="op">&lt;-</span> <span class="va">gapminder</span><span class="op">[</span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">9</span>, <span class="fl">19</span><span class="op">:</span><span class="fl">23</span><span class="op">)</span>,<span class="op">]</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -1707,9 +1714,9 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -1731,7 +1738,7 @@ Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1</code></pre
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/instructor/06-data-subsetting.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>

@@ -65,7 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="discuss.html">Discussion</a></li><li><a class="dropdown-item" href="reference.html"></a></li>
           </ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
@@ -308,13 +308,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li><li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
+                    <ul><li>
+                        <a href="key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="reference.html#glossary">Glossary</a>
+                      </li>
+                      <li>
+                        <a href="profiles.html">Learner Profiles</a>
+                      </li>
+                      <li><a href="discuss.html">Discussion</a></li><li><a href="reference.html"></a></li>
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -374,8 +382,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="va">function_name</span>
-<span class="fu">help</span><span class="op">(</span><span class="va">function_name</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="op">?</span><span class="va">function_name</span></span>
+<span><span class="fu">help</span><span class="op">(</span><span class="va">function_name</span><span class="op">)</span></span></code></pre>
 </div>
 <p>This will load up a help page in RStudio (or as plain text in R by itself).</p>
 <p>Each help page is broken down into sections:</p>
@@ -415,8 +423,8 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="st">"&lt;-"</span>
-<span class="op">?</span><span class="va">`&lt;-`</span></code></pre>
+<code class="sourceCode R"><span><span class="op">?</span><span class="st">"&lt;-"</span></span>
+<span><span class="op">?</span><span class="va">`&lt;-`</span></span></code></pre>
 </div>
 </section><section id="getting-help-on-packages"><h2 class="section-heading">Getting help on packages</h2>
 <hr class="half-width"><p>Many packages come with “vignettes”: tutorials and extended example documentation. Without any arguments, <code>vignette()</code> will list all vignettes for all installed packages; <code>vignette(package="package-name")</code> will list all available vignettes for <code>package-name</code>, and <code>vignette("vignette-name")</code> will open the specified vignette.</p>
@@ -428,14 +436,14 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="op">?</span><span class="va">function_name</span></code></pre>
+<code class="sourceCode R"><span><span class="op">?</span><span class="op">?</span><span class="va">function_name</span></span></code></pre>
 </div>
 <p>A fuzzy search is when you search for an approximate string match. For example, you may remember that the function to set your working directory includes “set” in its name. You can do a fuzzy search to help you identify the function:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="op">?</span><span class="va">set</span></code></pre>
+<code class="sourceCode R"><span><span class="op">?</span><span class="op">?</span><span class="va">set</span></span></code></pre>
 </div>
 </section><section id="when-you-have-no-idea-where-to-begin"><h2 class="section-heading">When you have no idea where to begin</h2>
 <hr class="half-width"><p>If you don’t know what function or package you need to use <a href="http://cran.at.r-project.org/web/views" class="external-link">CRAN Task Views</a> is a specially maintained list of packages grouped into fields. This can be a good starting point.</p>
@@ -446,14 +454,14 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="op">?</span><span class="va">dput</span></code></pre>
+<code class="sourceCode R"><span><span class="op">?</span><span class="va">dput</span></span></code></pre>
 </div>
 <p>Will dump the data you’re working with into a format so that it can be copy and pasted by anyone else into their R session.</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">sessionInfo</span><span class="op">(</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">sessionInfo</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -492,9 +500,9 @@ loaded via a namespace (and not attached):
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span>
-<span class="fu">c</span><span class="op">(</span><span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span><span class="op">)</span>
-<span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="st">'f'</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="fl">3</span><span class="op">)</span></span>
+<span><span class="fu">c</span><span class="op">(</span><span class="st">'d'</span>, <span class="st">'e'</span>, <span class="st">'f'</span><span class="op">)</span></span>
+<span><span class="fu">c</span><span class="op">(</span><span class="fl">1</span>, <span class="fl">2</span>, <span class="st">'f'</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -538,15 +546,15 @@ loaded via a namespace (and not attached):
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">help</span><span class="op">(</span><span class="st">"paste"</span><span class="op">)</span>
-<span class="op">?</span><span class="va">paste</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">help</span><span class="op">(</span><span class="st">"paste"</span><span class="op">)</span></span>
+<span><span class="op">?</span><span class="va">paste</span></span></code></pre>
 </div>
 <p>The difference between <code>sep</code> and <code>collapse</code> is a little tricky. The <code>paste</code> function accepts any number of arguments, each of which can be a vector of any length. The <code>sep</code> argument specifies the string used between concatenated terms — by default, a space. The result is a vector as long as the longest argument supplied to <code>paste</code>. In contrast, <code>collapse</code> specifies that after concatenation the elements are <em>collapsed</em> together using the given separator, the result being a single string. e.g.</p>
 <div class="codewrapper sourceCode" id="cb10">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -557,7 +565,7 @@ loaded via a namespace (and not attached):
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, sep <span class="op">=</span> <span class="st">","</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -568,7 +576,7 @@ loaded via a namespace (and not attached):
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, collapse <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, collapse <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -579,7 +587,7 @@ loaded via a namespace (and not attached):
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, sep <span class="op">=</span> <span class="st">","</span>, collapse <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"a"</span>,<span class="st">"b"</span><span class="op">)</span>, <span class="st">"c"</span>, sep <span class="op">=</span> <span class="st">","</span>, collapse <span class="op">=</span> <span class="st">"|"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -655,9 +663,9 @@ loaded via a namespace (and not attached):
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -679,7 +687,7 @@ loaded via a namespace (and not attached):
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/03-seeking-help.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>

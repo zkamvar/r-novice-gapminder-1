@@ -65,8 +65,7 @@
           <button class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
             More <i data-feather="chevron-down"></i>
           </button>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"><li><a class="dropdown-item" href="profiles.html">Learner Profiles</a></li>
-          </ul></li>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown"></ul></li>
       </ul></div>
     <form class="d-flex col-md-2 search-form">
       <fieldset disabled><input class="form-control me-2 searchbox" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-success tablet-search-button" type="submit">
@@ -305,13 +304,21 @@
                 </h2>
                 <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingTwelve" data-bs-parent="#accordionFlush12">
                   <div class="accordion-body">
-                    <ul><li><a href="profiles.html">Learner Profiles</a></li>
+                    <ul><li>
+                        <a href="../instructor/key-points.html">Key Points</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/instructor-notes.html">Instructor Notes</a>
+                      </li>
+                      <li>
+                        <a href="../instructor/images.html">Extract All Images</a>
+                      </li>
+                      
                     </ul></div>
                 </div>
               </div>
             </div>
-
-            <a href="../instructor/aio.html">See all in one page</a>
+            <hr class="half-width resources"><a href="../instructor/aio.html">See all in one page</a>
 
             <hr class="d-none d-sm-block d-md-none"><div class="d-grid gap-1">
             
@@ -395,20 +402,20 @@
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">my_function</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">parameters</span><span class="op">)</span> <span class="op">{</span>
-  <span class="co"># perform action</span>
-  <span class="co"># return value</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">my_function</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">parameters</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="co"># perform action</span></span>
+<span>  <span class="co"># return value</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>Let’s define a function <code>fahr_to_kelvin()</code> that converts temperatures from Fahrenheit to Kelvin:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>We define <code>fahr_to_kelvin()</code> by assigning it to the output of <code>function</code>. The list of argument names are contained within parentheses. Next, the <a href="reference.html#body">body</a> of the function–the statements that are executed when it runs–is contained within curly braces (<code>{}</code>). The statements in the body are indented by two spaces. This makes the code easier to read but does not affect how the code operates.</p>
 <p>It is useful to think of creating functions like writing a cookbook. First you define the “ingredients” that your function needs. In this case, we only need one ingredient to use our function: “temp”. After we list our ingredients, we then say what we will do with them, in this case, we are taking our ingredient and applying a set of mathematical operators to it.</p>
@@ -430,8 +437,8 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># freezing point of water</span>
-<span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="fl">32</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># freezing point of water</span></span>
+<span><span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="fl">32</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -442,8 +449,8 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># boiling point of water</span>
-<span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="fl">212</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># boiling point of water</span></span>
+<span><span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="fl">212</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -469,17 +476,17 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 1
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Write a function called <code>kelvin_to_celsius</code> that takes a temperature in Kelvin and returns that temperature in Celsius</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">kelvin_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
- <span class="va">celsius</span> <span class="op">&lt;-</span> <span class="va">temp</span> <span class="op">-</span> <span class="fl">273.15</span>
- <span class="kw">return</span><span class="op">(</span><span class="va">celsius</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">kelvin_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span> <span class="va">celsius</span> <span class="op">&lt;-</span> <span class="va">temp</span> <span class="op">-</span> <span class="fl">273.15</span></span>
+<span> <span class="kw">return</span><span class="op">(</span><span class="va">celsius</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -492,15 +499,15 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span>
-<span class="op">}</span>
-
-<span class="va">kelvin_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">celsius</span> <span class="op">&lt;-</span> <span class="va">temp</span> <span class="op">-</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">celsius</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span></span>
+<span><span class="va">kelvin_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">celsius</span> <span class="op">&lt;-</span> <span class="va">temp</span> <span class="op">-</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">celsius</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <div id="challenge2" class="callout challenge">
 <div class="callout-square">
@@ -520,18 +527,18 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 2
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Define the function to convert directly from Fahrenheit to Celsius, by reusing these two functions above</p>
 <div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">temp_k</span> <span class="op">&lt;-</span> <span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span>
-  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">kelvin_to_celsius</span><span class="op">(</span><span class="va">temp_k</span><span class="op">)</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">temp_k</span> <span class="op">&lt;-</span> <span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span></span>
+<span>  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">kelvin_to_celsius</span><span class="op">(</span><span class="va">temp_k</span><span class="op">)</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -547,23 +554,23 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>For this function to work as intended, the argument <code>temp</code> must be a <code>numeric</code> value; otherwise, the mathematical procedure for converting between the two temperature scales will not work. To create an error, we can use the function <code>stop()</code>. For example, since the argument <code>temp</code> must be a <code>numeric</code> vector, we could check for this condition with an <code>if</code> statement and throw an error if the condition was violated. We could augment our function above like so:</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="kw">stop</span><span class="op">(</span><span class="st">"temp must be a numeric vector."</span><span class="op">)</span>
-  <span class="op">}</span>
-  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="kw">stop</span><span class="op">(</span><span class="st">"temp must be a numeric vector."</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>If we had multiple conditions or arguments to check, it would take many lines of code to check all of them. Luckily R provides the convenience function <code>stopifnot()</code>. We can list as many requirements that should evaluate to <code>TRUE</code>; <code>stopifnot()</code> throws an error if it finds one that is <code>FALSE</code>. Listing these conditions also serves a secondary purpose as extra documentation for the function.</p>
 <p>Let’s try out defensive programming with <code>stopifnot()</code> by adding assertions to check the input to our function <code>fahr_to_kelvin()</code>.</p>
@@ -572,19 +579,19 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="fu">stopifnot</span><span class="op">(</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span>
-  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_kelvin</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="fu">stopifnot</span><span class="op">(</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="va">kelvin</span> <span class="op">&lt;-</span> <span class="op">(</span><span class="op">(</span><span class="va">temp</span> <span class="op">-</span> <span class="fl">32</span><span class="op">)</span> <span class="op">*</span> <span class="op">(</span><span class="fl">5</span> <span class="op">/</span> <span class="fl">9</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> <span class="fl">273.15</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">kelvin</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>It still works when given proper input.</p>
 <div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># freezing point of water</span>
-<span class="fu">fahr_to_kelvin</span><span class="op">(</span>temp <span class="op">=</span> <span class="fl">32</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># freezing point of water</span></span>
+<span><span class="fu">fahr_to_kelvin</span><span class="op">(</span>temp <span class="op">=</span> <span class="fl">32</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -596,8 +603,8 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Metric is a factor instead of numeric</span>
-<span class="fu">fahr_to_kelvin</span><span class="op">(</span>temp <span class="op">=</span> <span class="fu">as.factor</span><span class="op">(</span><span class="fl">32</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># Metric is a factor instead of numeric</span></span>
+<span><span class="fu">fahr_to_kelvin</span><span class="op">(</span>temp <span class="op">=</span> <span class="fu">as.factor</span><span class="op">(</span><span class="fl">32</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -622,19 +629,19 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 3
   </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Extend our previous definition of the function by adding in an explicit call to <code>stopifnot()</code>. Since <code>fahr_to_celsius()</code> is a composition of two other functions, checking inside here makes adding checks to the two component functions redundant.</p>
 <div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fahr_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span>
-  <span class="fu">stopifnot</span><span class="op">(</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span>
-  <span class="va">temp_k</span> <span class="op">&lt;-</span> <span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span>
-  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">kelvin_to_celsius</span><span class="op">(</span><span class="va">temp_k</span><span class="op">)</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fahr_to_celsius</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="fu">stopifnot</span><span class="op">(</span><span class="fu">is.numeric</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span><span class="op">)</span></span>
+<span>  <span class="va">temp_k</span> <span class="op">&lt;-</span> <span class="fu">fahr_to_kelvin</span><span class="op">(</span><span class="va">temp</span><span class="op">)</span></span>
+<span>  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">kelvin_to_celsius</span><span class="op">(</span><span class="va">temp_k</span><span class="op">)</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -647,12 +654,12 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Takes a dataset and multiplies the population column</span>
-<span class="co"># with the GDP per capita column.</span>
-<span class="va">calcGDP</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">{</span>
-  <span class="va">gdp</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">pop</span> <span class="op">*</span> <span class="va">dat</span><span class="op">$</span><span class="va">gdpPercap</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">gdp</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># Takes a dataset and multiplies the population column</span></span>
+<span><span class="co"># with the GDP per capita column.</span></span>
+<span><span class="va">calcGDP</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">dat</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="va">gdp</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">pop</span> <span class="op">*</span> <span class="va">dat</span><span class="op">$</span><span class="va">gdpPercap</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">gdp</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>We define <code>calcGDP()</code> by assigning it to the output of <code>function</code>. The list of argument names are contained within parentheses. Next, the body of the function -- the statements executed when you call the function – is contained within curly braces (<code>{}</code>).</p>
 <p>We’ve indented the statements in the body by two spaces. This makes the code easier to read but does not affect how it operates.</p>
@@ -662,7 +669,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">calcGDP</span><span class="op">(</span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">calcGDP</span><span class="op">(</span><span class="fu">head</span><span class="op">(</span><span class="va">gapminder</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -674,27 +681,27 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Takes a dataset and multiplies the population column</span>
-<span class="co"># with the GDP per capita column.</span>
-<span class="va">calcGDP</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">dat</span>, <span class="va">year</span><span class="op">=</span><span class="cn">NULL</span>, <span class="va">country</span><span class="op">=</span><span class="cn">NULL</span><span class="op">)</span> <span class="op">{</span>
-  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="va">year</span>, <span class="op">]</span>
-  <span class="op">}</span>
-  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">country</span> <span class="op">%in%</span> <span class="va">country</span>,<span class="op">]</span>
-  <span class="op">}</span>
-  <span class="va">gdp</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">pop</span> <span class="op">*</span> <span class="va">dat</span><span class="op">$</span><span class="va">gdpPercap</span>
-
-  <span class="va">new</span> <span class="op">&lt;-</span> <span class="fu">cbind</span><span class="op">(</span><span class="va">dat</span>, gdp<span class="op">=</span><span class="va">gdp</span><span class="op">)</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">new</span><span class="op">)</span>
-<span class="op">}</span></code></pre>
+<code class="sourceCode R"><span><span class="co"># Takes a dataset and multiplies the population column</span></span>
+<span><span class="co"># with the GDP per capita column.</span></span>
+<span><span class="va">calcGDP</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">dat</span>, <span class="va">year</span><span class="op">=</span><span class="cn">NULL</span>, <span class="va">country</span><span class="op">=</span><span class="cn">NULL</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="va">year</span>, <span class="op">]</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">country</span> <span class="op">%in%</span> <span class="va">country</span>,<span class="op">]</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="va">gdp</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">$</span><span class="va">pop</span> <span class="op">*</span> <span class="va">dat</span><span class="op">$</span><span class="va">gdpPercap</span></span>
+<span></span>
+<span>  <span class="va">new</span> <span class="op">&lt;-</span> <span class="fu">cbind</span><span class="op">(</span><span class="va">dat</span>, gdp<span class="op">=</span><span class="va">gdp</span><span class="op">)</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">new</span><span class="op">)</span></span>
+<span><span class="op">}</span></span></code></pre>
 </div>
 <p>If you’ve been writing these functions down into a separate R script (a good idea!), you can load in the functions into our R session by using the <code>source()</code> function:</p>
 <div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">source</span><span class="op">(</span><span class="st">"functions/functions-lesson.R"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="kw">source</span><span class="op">(</span><span class="st">"functions/functions-lesson.R"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>Ok, so there’s a lot going on in this function now. In plain English, the function now subsets the provided data by year if the year argument isn’t empty, then subsets the result by country if the country argument isn’t empty. Then it calculates the GDP for whatever subset emerges from the previous two steps. The function then adds the GDP as a new column to the subsetted data and returns this as the final result. You can see that the output is much more informative than a vector of numbers.</p>
 <p>Let’s take a look at what happens when we specify the year:</p>
@@ -702,7 +709,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">head</span><span class="op">(</span><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year<span class="op">=</span><span class="fl">2007</span><span class="op">)</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">head</span><span class="op">(</span><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year<span class="op">=</span><span class="fl">2007</span><span class="op">)</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -720,7 +727,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, country<span class="op">=</span><span class="st">"Australia"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, country<span class="op">=</span><span class="st">"Australia"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -744,7 +751,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year<span class="op">=</span><span class="fl">2007</span>, country<span class="op">=</span><span class="st">"Australia"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year<span class="op">=</span><span class="fl">2007</span>, country<span class="op">=</span><span class="st">"Australia"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -763,12 +770,12 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R">  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="va">year</span>, <span class="op">]</span>
-  <span class="op">}</span>
-  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span>
-    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">country</span> <span class="op">%in%</span> <span class="va">country</span>,<span class="op">]</span>
-  <span class="op">}</span></code></pre>
+<code class="sourceCode R"><span>  <span class="kw">if</span><span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">year</span> <span class="op">%in%</span> <span class="va">year</span>, <span class="op">]</span></span>
+<span>  <span class="op">}</span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="fu">is.null</span><span class="op">(</span><span class="va">country</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">dat</span> <span class="op">&lt;-</span> <span class="va">dat</span><span class="op">[</span><span class="va">dat</span><span class="op">$</span><span class="va">country</span> <span class="op">%in%</span> <span class="va">country</span>,<span class="op">]</span></span>
+<span>  <span class="op">}</span></span></code></pre>
 </div>
 <p>Here, we check whether each additional argument is set to <code>null</code>, and whenever they’re not <code>null</code> overwrite the dataset stored in <code>dat</code> with a subset given by the non-<code>null</code> argument.</p>
 <p>Building these conditionals into the function makes it more flexible for later. Now, we can use it to calculate the GDP for:</p>
@@ -827,13 +834,13 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 4
   </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <div class="codewrapper sourceCode" id="cb32">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R">  <span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">1952</span>, <span class="fl">1987</span><span class="op">)</span>, country <span class="op">=</span> <span class="st">"New Zealand"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span>  <span class="fu">calcGDP</span><span class="op">(</span><span class="va">gapminder</span>, year <span class="op">=</span> <span class="fu">c</span><span class="op">(</span><span class="fl">1952</span>, <span class="fl">1987</span><span class="op">)</span>, country <span class="op">=</span> <span class="st">"New Zealand"</span><span class="op">)</span></span></code></pre>
 </div>
 <p>GDP for New Zealand in 1987: 65050008703</p>
 <p>GDP for New Zealand in 1952: 21058193787</p>
@@ -853,8 +860,8 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">best_practice</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Write"</span>, <span class="st">"programs"</span>, <span class="st">"for"</span>, <span class="st">"people"</span>, <span class="st">"not"</span>, <span class="st">"computers"</span><span class="op">)</span>
-<span class="fu">paste</span><span class="op">(</span><span class="va">best_practice</span>, collapse<span class="op">=</span><span class="st">" "</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">best_practice</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Write"</span>, <span class="st">"programs"</span>, <span class="st">"for"</span>, <span class="st">"people"</span>, <span class="st">"not"</span>, <span class="st">"computers"</span><span class="op">)</span></span>
+<span><span class="fu">paste</span><span class="op">(</span><span class="va">best_practice</span>, collapse<span class="op">=</span><span class="st">" "</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -866,7 +873,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">fence</span><span class="op">(</span>text<span class="op">=</span><span class="va">best_practice</span>, wrapper<span class="op">=</span><span class="st">"***"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="fu">fence</span><span class="op">(</span>text<span class="op">=</span><span class="va">best_practice</span>, wrapper<span class="op">=</span><span class="st">"***"</span><span class="op">)</span></span></code></pre>
 </div>
 <p><em>Note:</em> the <code>paste()</code> function has an argument called <code>sep</code>, which specifies the separator between text. The default is a space: " “. The default for <code>paste0()</code> is no space”".</p>
 </div>
@@ -879,20 +886,20 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   Solution to challenge 5
   </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Write a function called <code>fence()</code> that takes two vectors as arguments, called <code>text</code> and <code>wrapper</code>, and prints out the text wrapped with the <code>wrapper</code>:</p>
 <div class="codewrapper sourceCode" id="cb36">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">fence</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">text</span>, <span class="va">wrapper</span><span class="op">)</span><span class="op">{</span>
-  <span class="va">text</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="va">wrapper</span>, <span class="va">text</span>, <span class="va">wrapper</span><span class="op">)</span>
-  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">paste</span><span class="op">(</span><span class="va">text</span>, collapse <span class="op">=</span> <span class="st">" "</span><span class="op">)</span>
-  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span>
-<span class="op">}</span>
-<span class="va">best_practice</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Write"</span>, <span class="st">"programs"</span>, <span class="st">"for"</span>, <span class="st">"people"</span>, <span class="st">"not"</span>, <span class="st">"computers"</span><span class="op">)</span>
-<span class="fu">fence</span><span class="op">(</span>text<span class="op">=</span><span class="va">best_practice</span>, wrapper<span class="op">=</span><span class="st">"***"</span><span class="op">)</span></code></pre>
+<code class="sourceCode R"><span><span class="va">fence</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">text</span>, <span class="va">wrapper</span><span class="op">)</span><span class="op">{</span></span>
+<span>  <span class="va">text</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="va">wrapper</span>, <span class="va">text</span>, <span class="va">wrapper</span><span class="op">)</span></span>
+<span>  <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">paste</span><span class="op">(</span><span class="va">text</span>, collapse <span class="op">=</span> <span class="st">" "</span><span class="op">)</span></span>
+<span>  <span class="kw">return</span><span class="op">(</span><span class="va">result</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span><span class="va">best_practice</span> <span class="op">&lt;-</span> <span class="fu">c</span><span class="op">(</span><span class="st">"Write"</span>, <span class="st">"programs"</span>, <span class="st">"for"</span>, <span class="st">"people"</span>, <span class="st">"not"</span>, <span class="st">"computers"</span><span class="op">)</span></span>
+<span><span class="fu">fence</span><span class="op">(</span>text<span class="op">=</span><span class="va">best_practice</span>, wrapper<span class="op">=</span><span class="st">"***"</span><span class="op">)</span></span></code></pre>
 </div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -972,9 +979,9 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
         <p>Materials licensed under <a href="../LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.0" class="external-link">sandpaper (0.6.0)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.6.2" class="external-link">sandpaper (0.6.2)</a>,
         <a href="https://github.com/carpentries/pegboard/tree/0.3.0" class="external-link">pegboard (0.3.0)</a>,
-      and <a href="https://github.com/carpentries/varnish/tree/0.2.0" class="external-link">varnish (0.2.0)</a>.</p>
+      and <a href="https://github.com/carpentries/varnish/tree/0.2.1" class="external-link">varnish (0.2.1)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -996,7 +1003,7 @@ statement\]</span>({{ page.root }}/reference.html#return-statement) to send a re
   "identifier": "https://fishtree-attempt.github.io/r-novice-gapminder/instructor/10-functions.html",
   "dateCreated": "2022-06-20",
   "dateModified": "2022-05-18",
-  "datePublished": "2022-06-21"
+  "datePublished": "2022-06-28"
 }
 
   </script><script>
